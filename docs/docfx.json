@@ -34,14 +34,26 @@
       }
     ],
     "postProcessors": [ "ExtractSearchIndex" ],
+    "globalMetadata": {
+      "_appTitle": "msDocs",
+      "_appName": "msdocs",
+      "_appFooter": "<span>Soutenu par le <a href=\"https://onetech-group.com\">Onetech Group</a>. Réalisé par <a href=\"https://github.com/MehdiSellamiAdministrator\">Mehdi Sellami</a></span>" 
+    },
+    "markdownEngineProperties": {
+      "alerts": {
+        "TODO": "alert alert-secondary"
+      }
+    },
+    "sitemap": {
+      "baseUrl": "",
+      "priority": 0.5,
+      "changefreq": "daily"
+    },
     "output": "_site",
-    "globalMetadataFiles": [],
-    "fileMetadataFiles": [],
     "template": [
       "default",
-      "modern"
-    ],
-    "keepFileLink": false,
-    "disableGitFeatures": false
+      "modern",
+      "template"
+    ]
   }
 }
