@@ -60,7 +60,7 @@
 
 - Accédons à la section "**`Devices`**" et sélectionner "**`Add Software Devices`**."
 
-![Export-image-ubuntu](../images/add-software.png)
+![Export-image-ubuntu](../images/addsoftware.jpg)
 
 - Cliquons sur "**`Add Software Device`**." Dans la zone PID de base, commençons à taper "**`VEDGE-CLOUD-DNA`**" et sélectionne-le dans la liste déroulante lorsqu'il apparaît. Spécifions la `quantité` souhaitée (par exemple, 5, ce qui est généralement une bonne option), et sélectionnons le `nom du profil` que nous avons créé plus tôt.
 
