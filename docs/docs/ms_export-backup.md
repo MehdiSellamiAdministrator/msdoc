@@ -19,7 +19,7 @@ EVE-NG
 wsl --list
 ```
 
-![Export-image-ubuntu](../images/wslexport.jpg)
+![WSL Export](../images/wslexport.jpg)
 
 3. Tapons la commande suivante pour créer une `sauvegarde de la distribution WSL` et appuyez sur Entrée :
 
