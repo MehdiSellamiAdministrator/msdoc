@@ -38,7 +38,7 @@ jobs:
     # Copy the contents of the "site" folder to the gh-pages branch
     - name: Copy site folder to gh-pages
       run: |
-        git checkout master -- site/
+        git checkout master -- _site/
         git add site/
         git commit -m "Update site folder in gh-pages"
         git push origin gh-pages
@@ -53,6 +53,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/_site  # Set the path to your specific folder
+        publish_dir: ./site  # Set the path to your specific folder
 
   
