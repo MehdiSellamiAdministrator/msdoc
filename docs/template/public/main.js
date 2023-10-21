@@ -2,7 +2,7 @@ export default {
   iconLinks: [
     {
       icon: 'github',
-      href: 'https://github.com/dotnet/docfx',
+      href: 'https://github.com/MehdiSellamiAdministrator/msdoc',
       title: 'GitHub'
     }
   ]
