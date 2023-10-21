@@ -8,7 +8,7 @@ Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-W
 
 - Nous allons d’abord nous connecter à `EVE-NG via SSH`, puis créer des fichiers dans EVE-NG. 
 
-![Alt text](../images/add-img-cisco-eve.png)
+![Alt text](images/add-img-cisco-eve.png)
 
 - Voici les `commandes` de création de dossiers dont nous aurons besoin, comme indiqué :
 
