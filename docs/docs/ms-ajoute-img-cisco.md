@@ -2,13 +2,13 @@
 
 Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-WAN` et d'autres images sur EVE-NG en utilisant `SSH (Secure Shell)` et `SCP (Secure Copy Protocol)` pour transférer les fichiers vers notre instance EVE-NG.
 
-![Alt text](./images/images-cisco-backup.png)
+![Alt text](images/images-cisco-backup.png)
 
 ## Créer les fichiers
 
 - Nous allons d’abord nous connecter à `EVE-NG via SSH`, puis créer des fichiers dans EVE-NG. 
 
-![Alt text](./images/add-img-cisco-eve.png)
+![Alt text](images/add-img-cisco-eve.png)
 
 - Voici les `commandes` de création de dossiers dont nous aurons besoin, comme indiqué :
 
@@ -16,7 +16,7 @@ Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-W
 cd /opt/unetlab/addons/qemu
 mkdir vtedge-20.4.1 vtbond-20.4.1 vtsmart-20.4.1 vtmgmt-20.4.1 csr1000vng-universalk9.17.03.01a-serial viosl2-adventerprisek9-m.ssa.high_iron_20200929 asav-9.17-1-7
 ```
-![Alt text](/dir-eve.png)
+![Alt text](images/dir-eve.png)
 
 - Ensuite, à l'aide de la commande `scp` (Linux ou Windows), nous copions les fichiers (qcow) comme dans le tableau :
 

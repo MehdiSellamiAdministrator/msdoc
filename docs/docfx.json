@@ -29,7 +29,7 @@
     ],
     "resource": [
       {
-        "files": [ "**/images/**"],
+        "files": [ "**/images/**", "docs/images/**"],
         "exclude": [ "_site/**", "obj/**" ]
       }
     ],
