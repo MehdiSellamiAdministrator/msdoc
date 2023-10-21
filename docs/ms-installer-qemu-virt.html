@@ -117,7 +117,7 @@ sudo apt install libguestfs-tools
 </ol>
 <pre><code class="lang-bash">sudo systemctl status libvirtd.service
 </code></pre>
-<p><img src="../images/libvirtd.png" alt="libvirtd.service"></p>
+<p><img src="../images/libvirtd.jpg" alt="libvirtd.service"></p>
 <ol start="4">
 <li>Puisque nous souhaitons utiliser notre compte utilisateur Linux standard pour gérer KVM, configurons KVM pour permettre cela. Ouvrez le fichier <code>/etc/libvirt/libvirtd.conf</code> pour le modifier.</li>
 </ol>
@@ -133,9 +133,9 @@ unix_sock_rw_perms = &quot;0770&quot;
 </ol>
 <pre><code class="lang-bash">sudo systemctl restart libvirtd.service
 </code></pre>
-<p><img src="../images/groups.png" alt="groups"></p>
+<p><img src="../images/groups.jpg" alt="groups"></p>
 <p>Nous avons installé avec succès KVM, QEMU et Virt Manager sur Ubuntu.</p>
-<p><img src="../images/virt-manager.png" alt="virt-manager"></p>
+<p><img src="../images/virtmanager.jpg" alt="virt-manager"></p>
 <h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
 <ul>
 <li>Pour plus de détails, vous pouvez consulter le lien suivant: <a href="https://www.qemu.org/docs/master/index.html">Welcome to QEMU’s documentation!</a></li>

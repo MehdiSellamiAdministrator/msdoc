@@ -101,16 +101,16 @@
 </ol>
 <pre><code class="lang-bash">wsl --list
 </code></pre>
-<p><img src="../images/wsl-export.png" alt="Export-image-ubuntu"></p>
+<p><img src="../images/wslexport.jpg" alt="Export-image-ubuntu"></p>
 <ol start="3">
 <li>Tapons la commande suivante pour créer une <code>sauvegarde de la distribution WSL</code> et appuyez sur Entrée :</li>
 </ol>
 <pre><code class="lang-bash"># wsl.exe --export &lt;name of distribution&gt; &lt;filename of exported image&gt;
 wsl.exe --export Ubuntu-22.04 C:\WSL\ubuntu-onetech-backup.tar.gz
 </code></pre>
-<p><img src="../images/export-ubuntu-onetech.png" alt="Export-image-ubuntu"></p>
+<p><img src="../images/exportubuntuonetech.jpg" alt="Export-image-ubuntu"></p>
 <p>Veuillons noter qu'il n'y a pas de barre de progression pour suivre l'avancement. pour moi cette processus avec presque 18 GO reste 3 minute.</p>
-<p><img src="../images/backup-finish.png" alt="Export-image-ubuntu"></p>
+<p><img src="../images/backupfinish.jpg" alt="Export-image-ubuntu"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Pour utiliser cette distribution, n'oubliez pas d'ajouter notre propre <code>noyau</code> pour l'ajouter et également d'installer le module pour <code>Kvm_amd ou Kvm_intel</code> ; C'est aussi simple que d'utiliser quelques commandes et de changer le mot <code>amd</code> en <code>intel</code> ; Du côté du noyau, j'ai ajouté <code>AMD et Intel</code> ; Voir cet article [].</p>
@@ -120,7 +120,7 @@ wsl.exe --export Ubuntu-22.04 C:\WSL\ubuntu-onetech-backup.tar.gz
 <ol>
 <li>Ajouter notre propre noyau (Kernel) dans ce chemin: <code>&quot;C:\Users\\%USERNAME%\\bzImage&quot;</code>.</li>
 </ol>
-<p><img src="../images/import-image.png" alt="Import-kernel-linux"></p>
+<p><img src="../images/importimage.jpg" alt="Import-kernel-linux"></p>
 <ol start="2">
 <li>Créez un fichier <code>.wslconfig</code> dans le répertoire <code>&quot;C:\\Users\\%USERNAME%\\.wslconfig&quot;</code> contenant la configuration suivante :</li>
 </ol>
