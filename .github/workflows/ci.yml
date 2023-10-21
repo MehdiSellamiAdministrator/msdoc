@@ -11,10 +11,15 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: actions/download-artifact@v3
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Dotnet Setup
+      uses: actions/setup-dotnet@v3
       with:
-        name: site
-        path: site
+        dotnet-version: 7.x
+
+    - run: dotnet tool update -g docfx
+    - run: docfx docs/docfx.json
 
     # Create the gh-pages branch
     - name: Create gh-pages branch
