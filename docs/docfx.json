@@ -33,6 +33,7 @@
         "exclude": [ "_site/**", "obj/**" ]
       }
     ],
+    "postProcessors": [ "ExtractSearchIndex" ],
     "output": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
@@ -40,7 +41,6 @@
       "default",
       "modern"
     ],
-    "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false
   }
