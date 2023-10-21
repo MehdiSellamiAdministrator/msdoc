@@ -46,7 +46,7 @@
       }
     },
     "sitemap": {
-      "baseUrl": "https://mehdisellamiadministrator.github.io/msdoc",
+      "baseUrl": "https://mehdisellamiadministrator.github.io/msdoc/",
       "priority": 0.5,
       "changefreq": "daily"
     },
