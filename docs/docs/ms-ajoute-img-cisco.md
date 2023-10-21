@@ -2,7 +2,7 @@
 
 Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-WAN` et d'autres images sur EVE-NG en utilisant `SSH (Secure Shell)` et `SCP (Secure Copy Protocol)` pour transférer les fichiers vers notre instance EVE-NG.
 
-![Alt text](images/images-cisco-backup.png)
+![Alt text](./images/images-cisco-backup.png)
 
 ## Créer les fichiers
 
