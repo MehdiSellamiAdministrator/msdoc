@@ -5,7 +5,7 @@
     - name: Démarrage du Projet
       href: demarrage-initial.md
     - name: Gestion du projet
-      href: Gestion-du-projet.md
+      href: gestion-du-projet.md
     - name: Tableau Kanban
       href: tableau-kanban.md
 
