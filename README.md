@@ -4,10 +4,8 @@ Bienvenue dans le projet SD-WAN: Une introduction générale au projet SD-WAN et
 
 # Sujet PFE
 
-Définition du sujet de Projet de Fin d'Études (PFE), qui porte sur `la conception et l'implémentation d'un réseau WAN basé sur les technologies SDN de Cisco (Viptela)`.
+Sujet de Projet de Fin d'Études (PFE), qui porte sur `la conception et l'implémentation d'un réseau WAN basé sur les technologies SDN de Cisco (Viptela)`.
 
-* [Getting Started](#getting-started)
-* [Contributing](#contributing)
-* [Roadmap](#roadmap)
-* [License](#license)
-* [SD-WAN](#sdn)
+> ⚠️⚠️⚠️ NOTICE ⚠️⚠️⚠️
+>
+> **msDoc** est la documentation de mon projet !
