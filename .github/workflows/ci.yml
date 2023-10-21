@@ -28,7 +28,7 @@ jobs:
     # Copy the contents of the "site" folder to the gh-pages branch
     - name: Copy site folder to gh-pages
       run: |
-        git checkout main -- site/
+        git checkout master -- site/
         git add site/
         git commit -m "Update site folder in gh-pages"
         git push origin gh-pages
@@ -36,7 +36,7 @@ jobs:
     # Clean up the workspace
     - name: Clean up
       run: |
-        git checkout main
+        git checkout master
         git branch -D gh-pages
         
     - name: Deploy to gh-pages
