@@ -23,25 +23,14 @@
   "build": {
     "content": [
       {
-        "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
-      },
-      {
-        "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
-        ]
+        "files": [ "**/*.{md,yml}" ],
+        "exclude": [ "_site/**", "obj/**" ]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": [ "**/images/**"],
+        "exclude": [ "_site/**", "obj/**" ]
       }
     ],
     "output": "_site",
