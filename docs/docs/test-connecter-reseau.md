@@ -28,7 +28,7 @@ Pour vérifier la connectivité réseau entre les instances Ubuntu WSL 2 et EVE-
 code .
 ```
 
-![VS Code in Ubuntu WSL2](/images/vs-code-ubuntu.png)
+![VS Code in Ubuntu WSL2](images/vs-code-ubuntu.png)
 
 2. Nous pouvons également utiliser les éléments suivants pour localiser l'adresse IP de notre environnement WSL :
 
@@ -36,7 +36,7 @@ code .
 ip addr show eth0 | awk -F'[ /]+' '$2=="inet" {print $3}'
 ```
 
-![VS Code in Ubuntu WSL2](/images/ip-ubuntu-wsl.png)
+![VS Code in Ubuntu WSL2](images/ip-ubuntu-wsl.png)
 
 3. Maintenant, testons la connectivité entre :
 
@@ -52,14 +52,14 @@ ping 192.168.122.29 # EVEng instance
 ping onetech-group.com # Internet
 ```
 
-![Test Ping](/images/testing-wsl-ping.png)
+![Test Ping](images/testing-wsl-ping.png)
 
 4. D'après la sortie de la commande "ip a", voici les informations sur les interfaces réseau de notre instance Ubuntu WSL 2 :
 
 ```bash
 ip a
 ```
-![Test Ping](/images/ip-a.png)
+![Test Ping](images/ip-a.png)
 
 Interface | Adresse IPv4 | Adresse IPv6
 -----    | ----        | ---- | ----
@@ -77,7 +77,7 @@ Vous pouvez utiliser ces informations pour mettre en place des règles de pare-f
 ```bash
 sudo netstat -plant
 ```
-![Netstat](/images/netstat.png)
+![Netstat](images/netstat.png)
 
 6. Nous pouvons aussi ouvrir n'importe quelle URL dans le navigateur Web par défaut de Windows 11 directement sur Ubuntu WSL :
 
@@ -85,7 +85,7 @@ sudo netstat -plant
 wslview https://onetech-group.com
 ```
 
-![Netstat](/images/wslviews.png)
+![Netstat](images/wslviews.png)
 
 
 ## Test pour Instance EVEng
@@ -100,7 +100,7 @@ ping 172.29.96.130 # Ubuntu WSL2 Pass
 ping onetech-group.com # Internet Pass
 ```
 
-![Netstat](/images/eveng-ping.png)
+![Netstat](images/eveng-ping.png)
 
 Ces étapes sont effectuées avec succès, cela confirmera que nous avons une connectivité réseau fonctionnelle entre l'instance EVE-NG et notre instance Ubuntu WSL 2, ainsi que Windows 11 (hôte) et Internet.
 
@@ -120,7 +120,7 @@ Pour le lancer, entrez :
 # Installer Google Chrome pour Linux
 google-chrome http://192.168.122.29
 ```
-![Netstat](/images/eveng-chrome-UI.png)
+![Netstat](images/eveng-chrome-UI.png)
 
 En résumé, cette vérification de la connectivité et les étapes associées nous permettent de garantir que notre environnement est prêt à être utilisé pour nos projets et activités, offrant une base solide pour notre travail futur.
 

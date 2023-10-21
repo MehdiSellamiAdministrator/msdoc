@@ -8,76 +8,76 @@
 
 - La première étape consiste à accéder au `portail de téléchargement` de Cisco. Nous pouvons le faire en nous rendant sur : [Cisco Software Central](https://software.cisco.com).
 
-![Export-image-ubuntu](/images/software.cisco.png)
+![Export-image-ubuntu](images/software.cisco.png)
 
 #### `2. Gérer le Compte Smart`
 
 - Une fois sur le portail de téléchargement, nous devrons nous connecter avec `notre compte` Cisco. Une fois connecté, sélectionnez "**`Manage Smart Account`**."
 
-![Export-image-ubuntu](/images/manage-smart-account.png)
+![Export-image-ubuntu](images/manage-smart-account.png)
 
 #### `3. Créer un Compte Virtuel`
 
 - Maintenant, nous allons créer `un compte virtuel`. Cela permettra de gérer nos `licences` et téléchargements de manière organisée. Donnons un nom `MS-SDWAN` à notre compte virtuel et assurons-nous de le définir en tant que "**`Private`**" pour plus de sécurité. Cliquons sur "**`Save`**."
 
-![Export-image-ubuntu](/images/virtual-account.png)
+![Export-image-ubuntu](images/virtual-account.png)
 
-![Export-image-ubuntu](/images/testing-sdwan.png)
+![Export-image-ubuntu](images/testing-sdwan.png)
 
 > [!NOTE]
 > Notre compte virtuel devrait maintenant être créé et visible sur le portail.
 
-![Export-image-ubuntu](/images/vm-account-cisco.png)
+![Export-image-ubuntu](images/vm-account-cisco.png)
 
 #### `4. Créer un Profil de Contrôleur vBond`
 
 - La prochaine étape est de créer un `profil de contrôleur vBond`. Revenons à la page principal comme nous l'avons commencé, puis cliquez sur le lien "**`Plug and Play Connect`**."
 
-![Export-image-ubuntu](/images/plug-and-play.png)
+![Export-image-ubuntu](images/plug-and-play.png)
 
 - Sélectionnons le `compte virtuel` que nous avons créé précédemment, puis cliquons sur "**`Controller Profiles`**." :
 
-![Export-image-ubuntu](/images/connect-cisco.png)
+![Export-image-ubuntu](images/connect-cisco.png)
 
 - Cliquons sur "**`Add Profile`**", et Sélectionnons "`VBOND`" dans le menu déroulant. :
 
-![Export-image-ubuntu](/images/add-profile.png)
-![Export-image-ubuntu](/images/vbond-compte.png)
+![Export-image-ubuntu](images/add-profile.png)
+![Export-image-ubuntu](images/vbond-compte.png)
 
 - Donnons un nom au profil et spécifions le `nom de l'organisation`. Définissons le contrôleur principal sur `IPv4` et ajoutez l'adresse IP nécessaire. 
 
 > [!NOTE]
 > Nous avons la flexibilité d'utiliser n'importe quelle `adresse` de notre choix.
 
-![Export-image-ubuntu](/images/add-contoller-profile.png)
+![Export-image-ubuntu](images/add-contoller-profile.png)
 
 - Cliquons sur "**`Next`**," confirmons nos paramètres, puis cliquons sur "**`Submit `**." Enfin, cliquons sur "**`Done`**" pour confirmer la `création du profil`.
 
-![Export-image-ubuntu](/images/ok-smart.png)
-![Export-image-ubuntu](/images/add-ppc.png)
+![Export-image-ubuntu](images/ok-smart.png)
+![Export-image-ubuntu](images/add-ppc.png)
 
 #### `5. Ajouter des Appareils Logiciels`
 
 - Accédons à la section "**`Devices`**" et sélectionner "**`Add Software Devices`**."
 
-![Export-image-ubuntu](/images/add-software.png)
+![Export-image-ubuntu](images/add-software.png)
 
 - Cliquons sur "**`Add Software Device`**." Dans la zone PID de base, commençons à taper "**`VEDGE-CLOUD-DNA`**" et sélectionne-le dans la liste déroulante lorsqu'il apparaît. Spécifions la `quantité` souhaitée (par exemple, 5, ce qui est généralement une bonne option), et sélectionnons le `nom du profil` que nous avons créé plus tôt.
 
-![Export-image-ubuntu](/images/vs.png)
+![Export-image-ubuntu](images/vs.png)
 
 > [!NOTE]
 > Il y a une limite de 20 noeuds "gratuits".
 
 - Cliquons sur "**`Save`**," puis "**`Next`**," et enfin, "Submit." Notre demande sera traitée, et nous recevrons un e-mail de confirmation une fois qu'elle sera terminée.
 
-![Export-image-ubuntu](/images/confirme-email.png)
+![Export-image-ubuntu](images/confirme-email.png)
 
 #### `6. Vérifier nos Appareils`
 
 - Habituellement, ce processus est assez rapide. Quelques instants et actualiser la page. Nous devrions maintenant voir vos appareils ajoutés à notre compte.
 
-![Export-image-ubuntu](/images/plug-valid.png)
+![Export-image-ubuntu](images/plug-valid.png)
 
 > [!NOTE]
 > Répétez le processus et ajoutez des images CSR1000
@@ -86,12 +86,12 @@
 
 - Retournons aux profils de contrôleur et sélectionnez le `fichier de provisionnement` :
 
-![Export-image-ubuntu](/images/provisioning-file.png)
+![Export-image-ubuntu](images/provisioning-file.png)
 
 - Sélectionnons l'option "**`18.3 et plus récent`**" et téléchargeons le fichier correspondant.
 
-![Export-image-ubuntu](/images/18.png)
-![Export-image-ubuntu](/images/serial.png)
+![Export-image-ubuntu](images/18.png)
+![Export-image-ubuntu](images/serial.png)
 
 #### `8. Téléchargement des Images du Logiciel`
 
@@ -99,7 +99,7 @@ La dernière étape consiste à `télécharger les images` du logiciel. Si nous 
 
 - Pour ce faire, retournons sur [le site Web principal de Cisco](https://software.cisco.com/download/home) et effectuons une recherche pour "**`sd-wan`**" Nous pourrons télécharger les images dont nous avons besoin.
 
-![Export-image-ubuntu](/images/sof-download.png)
+![Export-image-ubuntu](images/sof-download.png)
 
 Ci-dessous, nous trouverons les `liens directs` pour gagner du temps :
 
