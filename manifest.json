@@ -46,1456 +46,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "docs/images/01.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/01.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/02.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/02.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/18.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/18.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/19.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/19.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ac.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ac.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/account-ms.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/account-ms.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add-contoller-profile.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add-contoller-profile.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add-img-cisco-eve.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add-img-cisco-eve.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add-img.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add-img.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add-ppc.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add-ppc.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add-profile.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add-profile.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add-software.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add-software.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/add.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/add.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/backup-finish.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/backup-finish.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/bash-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/bash-ssh.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/build-kernel.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/build-kernel.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/bzimages.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/bzimages.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ce-eveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ce-eveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/confirme-email.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/confirme-email.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/confirme-smart.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/confirme-smart.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/connect-cisco.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/connect-cisco.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/dash-eve.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/dash-eve.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/dir-eve.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/dir-eve.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/disk-image.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/disk-image.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/dm-eveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/dm-eveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/dna-edeg.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/dna-edeg.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/down-sdwan-qemu.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/down-sdwan-qemu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/drap-drop.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/drap-drop.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/dwonlod.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/dwonlod.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/each-cle-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/each-cle-ssh.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/email.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/email.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/enable-kvm.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/enable-kvm.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eve-dd.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eve-dd.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eve-root.mp4",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eve-root.mp4"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eve-ssh-z.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eve-ssh-z.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eve-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eve-ssh.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eve-start.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eve-start.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eve-xx.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eve-xx.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eveng-chrome-UI.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eveng-chrome-UI.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eveng-ping.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eveng-ping.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eveng-upgrade.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eveng-upgrade.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eveng-vmware.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eveng-vmware.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/eveng-x.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/eveng-x.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/evengadd.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/evengadd.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/evengqemu.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/evengqemu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/export-ubuntu-onetech.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/export-ubuntu-onetech.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/extension-vscode.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/extension-vscode.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/finish.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/finish.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/firefox-eve.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/firefox-eve.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/fix-per.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/fix-per.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/for-me.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/for-me.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/groups.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/groups.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/images-cisco-backup.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/images-cisco-backup.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/import-image.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/import-image.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/install-vmware.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/install-vmware.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ip-a.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ip-a.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ip-ubuntu-wsl.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ip-ubuntu-wsl.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/kvm-ok.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/kvm-ok.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/kvm.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/kvm.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/lancer-vmware.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/lancer-vmware.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/libvirtd.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/libvirtd.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/license-smart.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/license-smart.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/linux-client-side-new.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/linux-client-side-new.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/linux-client-side.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/linux-client-side.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/linux-kernel-5.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/linux-kernel-5.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/make.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/make.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/manage-smart-account.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/manage-smart-account.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/menuconfig.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/menuconfig.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/mkdir-eveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/mkdir-eveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/mobixtrem.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/mobixtrem.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/module.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/module.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ms-eve-dash.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ms-eve-dash.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ms-eve-root.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ms-eve-root.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ms-eve.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ms-eve.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ms-is-ready.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ms-is-ready.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ms-newkernel.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ms-newkernel.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/msEVE-clone.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/msEVE-clone.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/nat.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/nat.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/netstat.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/netstat.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/new-eveng-config.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/new-eveng-config.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/next.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/next.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ok-smart.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ok-smart.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/open-ssh-server.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/open-ssh-server.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ping.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ping.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/plug-and-play.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/plug-and-play.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/plug-valid.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/plug-valid.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/provisioning-file.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/provisioning-file.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/remote-ssh-install.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/remote-ssh-install.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/remote-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/remote-ssh.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/router-eveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/router-eveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/runeveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/runeveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/scp-edge.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/scp-edge.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/sdwan-dowonlod.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/sdwan-dowonlod.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/sdwan-eveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/sdwan-eveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/serial.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/serial.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/services.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/services.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/smart-cisco.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/smart-cisco.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/sof-download.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/sof-download.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/software.cisco.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/software.cisco.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-con.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-con.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-conf.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-conf.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-eve-con.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-eve-con.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-eve-status.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-eve-status.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-eve.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-eve.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-mgmt.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-mgmt.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-open.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-open.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-pass.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-pass.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-rm.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-rm.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-run.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-run.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-start.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-start.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-ubuntu.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-ubuntu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/ssh-up.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/ssh-up.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/stree.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/stree.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/telecharger-eveng.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/telecharger-eveng.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/test-router.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/test-router.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/test-usage.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/test-usage.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/test.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/test.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/testing-sdwan.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/testing-sdwan.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/testing-wsl-ping.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/testing-wsl-ping.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vbond-compte.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vbond-compte.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vedge.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vedge.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/verifier-cle-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/verifier-cle-ssh.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/viptela-qemu.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/viptela-qemu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/viptela.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/viptela.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/virt-manager.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/virt-manager.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/virtual-account.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/virtual-account.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vm-account-cisco.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vm-account-cisco.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vmdk.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vmdk.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vmgmt.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vmgmt.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vmware-down.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vmware-down.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vmware.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vmware.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vs-code-ubuntu.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vs-code-ubuntu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vs.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vs.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vscode-exe.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vscode-exe.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vscode-wsl.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vscode-wsl.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vscode.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vscode.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vscode.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vscode.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vsmart-qemu.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vsmart-qemu.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vsrrr.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vsrrr.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vtmgmt.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vtmgmt.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/vtsmart.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/vtsmart.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/wireshark.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/wireshark.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/wsl-export.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/wsl-export.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/wslviews.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/wslviews.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/yes.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/yes.png"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "docs/ms-ajoute-img-cisco.md",
       "output": {
@@ -1650,10 +200,1460 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/01.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/02.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/18.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/18.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/19.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/19.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ac.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ac.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/account-ms.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/account-ms.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-contoller-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-contoller-profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-img-cisco-eve.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-img-cisco-eve.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-img.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-img.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-ppc.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-ppc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-software.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-software.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/backup-finish.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/backup-finish.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bash-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bash-ssh.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/build-kernel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/build-kernel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bzimages.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bzimages.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ce-eveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ce-eveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/confirme-email.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/confirme-email.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/confirme-smart.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/confirme-smart.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/connect-cisco.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/connect-cisco.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dash-eve.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dash-eve.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dir-eve.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dir-eve.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/disk-image.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/disk-image.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dm-eveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dm-eveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dna-edeg.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dna-edeg.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/down-sdwan-qemu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/down-sdwan-qemu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/drap-drop.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/drap-drop.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dwonlod.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dwonlod.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/each-cle-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/each-cle-ssh.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/email.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/email.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/enable-kvm.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/enable-kvm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eve-dd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eve-dd.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eve-root.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "images/eve-root.mp4"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eve-ssh-z.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eve-ssh-z.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eve-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eve-ssh.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eve-start.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eve-start.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eve-xx.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eve-xx.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eveng-chrome-UI.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eveng-chrome-UI.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eveng-ping.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eveng-ping.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eveng-upgrade.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eveng-upgrade.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eveng-vmware.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eveng-vmware.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eveng-x.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eveng-x.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/evengadd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/evengadd.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/evengqemu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/evengqemu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/export-ubuntu-onetech.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/export-ubuntu-onetech.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/extension-vscode.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/extension-vscode.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/finish.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/finish.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/firefox-eve.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/firefox-eve.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fix-per.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fix-per.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/for-me.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/for-me.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/images-cisco-backup.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/images-cisco-backup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/import-image.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/import-image.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/install-vmware.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/install-vmware.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ip-a.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ip-a.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ip-ubuntu-wsl.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ip-ubuntu-wsl.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/kvm-ok.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/kvm-ok.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/kvm.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/kvm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lancer-vmware.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/lancer-vmware.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/libvirtd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/libvirtd.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/license-smart.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/license-smart.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/linux-client-side-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/linux-client-side-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/linux-client-side.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/linux-client-side.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/linux-kernel-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/linux-kernel-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/make.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/make.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manage-smart-account.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manage-smart-account.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/menuconfig.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/menuconfig.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mkdir-eveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mkdir-eveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mobixtrem.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mobixtrem.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/module.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/module.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ms-eve-dash.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ms-eve-dash.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ms-eve-root.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/ms-eve-root.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ms-eve.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/ms-eve.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ms-is-ready.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ms-is-ready.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ms-newkernel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ms-newkernel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/msEVE-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/msEVE-clone.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/mslogo.svg",
       "output": {
         "resource": {
           "relative_path": "images/mslogo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/nat.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/nat.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/netstat.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/netstat.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/new-eveng-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/new-eveng-config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/next.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/next.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ok-smart.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ok-smart.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/open-ssh-server.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/open-ssh-server.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ping.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ping.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/plug-and-play.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/plug-and-play.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/plug-valid.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/plug-valid.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/provisioning-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/provisioning-file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/remote-ssh-install.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/remote-ssh-install.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/remote-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/remote-ssh.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/router-eveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/router-eveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/runeveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/runeveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/scp-edge.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/scp-edge.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/sdwan-dowonlod.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/sdwan-dowonlod.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/sdwan-eveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/sdwan-eveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/serial.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/serial.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/services.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/services.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/smart-cisco.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/smart-cisco.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/sof-download.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/sof-download.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/software.cisco.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/software.cisco.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-con.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-con.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-conf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-conf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-eve-con.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-eve-con.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-eve-status.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-eve-status.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-eve.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-eve.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-mgmt.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-mgmt.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-open.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-open.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-pass.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-pass.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-rm.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-rm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-run.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-run.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-start.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-start.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-ubuntu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-ubuntu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ssh-up.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ssh-up.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/stree.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/stree.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/telecharger-eveng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/telecharger-eveng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/test-router.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/test-router.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/test-usage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/test-usage.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/test.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/test.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testing-sdwan.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/testing-sdwan.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testing-wsl-ping.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/testing-wsl-ping.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vbond-compte.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vbond-compte.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vedge.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vedge.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/verifier-cle-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/verifier-cle-ssh.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/viptela-qemu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/viptela-qemu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/viptela.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/viptela.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/virt-manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/virt-manager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/virtual-account.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/virtual-account.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vm-account-cisco.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vm-account-cisco.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vmdk.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vmdk.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vmgmt.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vmgmt.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vmware-down.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vmware-down.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vmware.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/vmware.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vs-code-ubuntu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vs-code-ubuntu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vscode-exe.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vscode-exe.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vscode-wsl.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vscode-wsl.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vscode.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/vscode.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vscode.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vscode.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vsmart-qemu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vsmart-qemu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vsrrr.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vsrrr.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vtmgmt.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vtmgmt.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vtsmart.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/vtsmart.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/wireshark.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/wireshark.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/wsl-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/wsl-export.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/wslviews.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/wslviews.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/yes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/yes.png"
         }
       },
       "version": ""

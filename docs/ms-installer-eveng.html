@@ -95,7 +95,7 @@
 <ul>
 <li>Placez le fichier <code>EVE-CE-0.vmdk</code> dans un répertoire de votre choix.</li>
 </ul>
-<p><img src="/images/vmdk.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<p><img src="../images/vmdk.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
 <ul>
 <li>Utilisez la commande <code>qemu-img</code> pour convertir le fichier d'image au format <code>.vmdk</code> en <code>.qcow2</code> :</li>
 </ul>
@@ -115,10 +115,10 @@
 <ul>
 <li>Dans <code>Virt-Manager</code>, ajoutez l'image <code>EVEms.qcow2</code> en suivant ces étapes :</li>
 </ul>
-<p><img src="/images/ms-eve.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<p><img src="../images/ms-eve.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
 <p><em><code>Étape 4</code></em> : Configuration finale d'EVE-NG</p>
 <p>Lorsque vous exécutez EVE-NG pour la première fois, suivez les étapes à l'écran, qui incluent une fenêtre bleue où nous devrons appuyer sur &quot;OK&quot; à chaque fois. Les étapes d'installation et de configuration spécifiques peuvent varier en fonction de la version d'EVE-NG que vous avez téléchargée.</p>
-<p><img src="/images/ms-eve-root.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<p><img src="../images/ms-eve-root.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
 <p><em><code>Étape 5</code></em> : Mises à jour du système</p>
 <ul>
 <li>Après avoir configuré EVE-NG, exécutez les commandes suivantes pour mettre à jour notre système :</li>
@@ -140,7 +140,7 @@ sudo apt-get dist-upgrade
 <p>Pour Windows : <a href="https://www.eve-ng.net/index.php/download/#DL-WIN">Windows Client Side</a>.</p>
 <p><em><code>Étape 7</code></em> : Télecharger Linux Client Side</p>
 <p><a href="https://launchpad.net/%7Esmartfinn/+archive/ubuntu/eve-ng-integration/+packages">Packages in “eve-ng-integration”</a></p>
-<p><img src="/images/linux-client-side-new.png" alt="Linux Client Side"></p>
+<p><img src="../images/linux-client-side-new.png" alt="Linux Client Side"></p>
 <ul>
 <li>Alternativement, vous pouvez installer <code>eve-ng-integration</code> depuis le terminal à l'aide de la commande suivante :</li>
 </ul>
@@ -153,7 +153,7 @@ sudo apt-get install eve-ng-integration
 <h5>Warning</h5>
 <p>La configuration de <code>wireshark-common</code> offre la possibilité d'installer <code>Dumpcap</code> de manière à permettre aux membres du groupe système &quot;wireshark&quot; de <code>capturer des paquets</code>. La question posée est : <em>&quot;Les utilisateurs non superutilisateurs devraient-ils être autorisés à capturer des paquets ?&quot;</em>.</p>
 </div>
-<p><img src="/images/wireshark.png" alt="Linux Client Side"></p>
+<p><img src="../images/wireshark.png" alt="Linux Client Side"></p>
 <p>Si vous utilisez une distribution de type <code>Debian</code>, nous pouvons exécuter la commande suivante et choisir la réponse <code>Oui</code> (si on veut):</p>
 <pre><code class="lang-bash">sudo usermod -a -G wireshark $USER
 sudo dpkg-reconfigure wireshark-common

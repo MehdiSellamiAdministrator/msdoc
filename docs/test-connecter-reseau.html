@@ -146,13 +146,13 @@
 </ol>
 <pre><code class="lang-bash">code .
 </code></pre>
-<p><img src="images/vs-code-ubuntu.png" alt="VS Code in Ubuntu WSL2"></p>
+<p><img src="../images/vs-code-ubuntu.png" alt="VS Code in Ubuntu WSL2"></p>
 <ol start="2">
 <li>Nous pouvons également utiliser les éléments suivants pour localiser l'adresse IP de notre environnement WSL :</li>
 </ol>
 <pre><code class="lang-bash">ip addr show eth0 | awk -F'[ /]+' '$2==&quot;inet&quot; {print $3}'
 </code></pre>
-<p><img src="images/ip-ubuntu-wsl.png" alt="VS Code in Ubuntu WSL2"></p>
+<p><img src="../images/ip-ubuntu-wsl.png" alt="VS Code in Ubuntu WSL2"></p>
 <ol start="3">
 <li>Maintenant, testons la connectivité entre :</li>
 </ol>
@@ -190,13 +190,13 @@
 ping 192.168.122.29 # EVEng instance
 ping onetech-group.com # Internet
 </code></pre>
-<p><img src="images/testing-wsl-ping.png" alt="Test Ping"></p>
+<p><img src="../images/testing-wsl-ping.png" alt="Test Ping"></p>
 <ol start="4">
 <li>D'après la sortie de la commande &quot;ip a&quot;, voici les informations sur les interfaces réseau de notre instance Ubuntu WSL 2 :</li>
 </ol>
 <pre><code class="lang-bash">ip a
 </code></pre>
-<p><img src="images/ip-a.png" alt="Test Ping"></p>
+<p><img src="../images/ip-a.png" alt="Test Ping"></p>
 <table>
 <thead>
 <tr>
@@ -233,13 +233,13 @@ ping onetech-group.com # Internet
 </ol>
 <pre><code class="lang-bash">sudo netstat -plant
 </code></pre>
-<p><img src="images/netstat.png" alt="Netstat"></p>
+<p><img src="../images/netstat.png" alt="Netstat"></p>
 <ol start="6">
 <li>Nous pouvons aussi ouvrir n'importe quelle URL dans le navigateur Web par défaut de Windows 11 directement sur Ubuntu WSL :</li>
 </ol>
 <pre><code class="lang-bash">wslview https://onetech-group.com
 </code></pre>
-<p><img src="images/wslviews.png" alt="Netstat"></p>
+<p><img src="../images/wslviews.png" alt="Netstat"></p>
 <h2 id="test-pour-instance-eveng">Test pour Instance EVEng</h2>
 <p>Pour tester la connectivité de l'instance EVE-NG, nous pouvons utiliser les informations fournies. Voici comment nous pouvons procéder :</p>
 <ol>
@@ -249,7 +249,7 @@ ping onetech-group.com # Internet
 ping 172.29.96.130 # Ubuntu WSL2 Pass
 ping onetech-group.com # Internet Pass
 </code></pre>
-<p><img src="images/eveng-ping.png" alt="Netstat"></p>
+<p><img src="../images/eveng-ping.png" alt="Netstat"></p>
 <p>Ces étapes sont effectuées avec succès, cela confirmera que nous avons une connectivité réseau fonctionnelle entre l'instance EVE-NG et notre instance Ubuntu WSL 2, ainsi que Windows 11 (hôte) et Internet.</p>
 <ol start="2">
 <li>Maintenant, nous allons tester l'ouverture de l'interface graphique d'EVE-NG dans le navigateur. Tout d'abord, nous devons installer manuellement Google Chrome comme navigateur sur Ubuntu WSL 2 (Installer Google Chrome pour Linux) :</li>
@@ -264,7 +264,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 <pre><code class="lang-bash"># Installer Google Chrome pour Linux
 google-chrome http://192.168.122.29
 </code></pre>
-<p><img src="images/eveng-chrome-UI.png" alt="Netstat"></p>
+<p><img src="../images/eveng-chrome-UI.png" alt="Netstat"></p>
 <p>En résumé, cette vérification de la connectivité et les étapes associées nous permettent de garantir que notre environnement est prêt à être utilisé pour nos projets et activités, offrant une base solide pour notre travail futur.</p>
 <h2 id="problèmes-potentiels-et-solutions">Problèmes Potentiels et Solutions</h2>
 <p>Lors de la vérification de la connectivité réseau, il est possible de rencontrer certains problèmes. Voici quelques problèmes potentiels et leurs solutions :</p>

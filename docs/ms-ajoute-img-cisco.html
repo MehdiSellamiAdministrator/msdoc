@@ -86,19 +86,19 @@
 <h1 id="ajouter-cisco-images-eveng">Ajouter Cisco Images (EVEng)</h1>
 
 <p>Une fois les fichiers téléchargés, nous allons ajouter les images Cisco <code>SD-WAN</code> et d'autres images sur EVE-NG en utilisant <code>SSH (Secure Shell)</code> et <code>SCP (Secure Copy Protocol)</code> pour transférer les fichiers vers notre instance EVE-NG.</p>
-<p><img src="images/images-cisco-backup.png" alt="Alt text"></p>
+<p><img src="../images/images-cisco-backup.png" alt="Alt text"></p>
 <h2 id="créer-les-fichiers">Créer les fichiers</h2>
 <ul>
 <li>Nous allons d’abord nous connecter à <code>EVE-NG via SSH</code>, puis créer des fichiers dans EVE-NG.</li>
 </ul>
-<p><img src="images/add-img-cisco-eve.png" alt="Alt text"></p>
+<p><img src="../images/add-img-cisco-eve.png" alt="Alt text"></p>
 <ul>
 <li>Voici les <code>commandes</code> de création de dossiers dont nous aurons besoin, comme indiqué :</li>
 </ul>
 <pre><code class="lang-bash">cd /opt/unetlab/addons/qemu
 mkdir vtedge-20.4.1 vtbond-20.4.1 vtsmart-20.4.1 vtmgmt-20.4.1 csr1000vng-universalk9.17.03.01a-serial viosl2-adventerprisek9-m.ssa.high_iron_20200929 asav-9.17-1-7
 </code></pre>
-<p><img src="images/dir-eve.png" alt="Alt text"></p>
+<p><img src="../images/dir-eve.png" alt="Alt text"></p>
 <ul>
 <li>Ensuite, à l'aide de la commande <code>scp</code> (Linux ou Windows), nous copions les fichiers (qcow) comme dans le tableau :</li>
 </ul>
@@ -171,7 +171,7 @@ scp -r viptela-vmanage-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unet
 <h5>Note</h5>
 <p><code>vBond</code> et <code>vEdge</code> partagent la même image (viptela-<code>edge</code>-20.4.1-genericx86-64.qcow2).</p>
 </div>
-<p><img src="images/add-img.png" alt="Alt text"></p>
+<p><img src="../images/add-img.png" alt="Alt text"></p>
 <ul>
 <li>Maintenant, en utilisant <code>SSH</code> à distance sur l'instance <code>EVE-NG</code>, créons un <code>deuxième stockage</code> supplémentaire de disque dur de <code>100 Go</code> appelé &quot;<strong>virtiob.qcow2</strong>&quot; et corrigeons <code>les autorisations</code> :</li>
 </ul>
@@ -179,7 +179,7 @@ scp -r viptela-vmanage-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unet
 /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
 </code></pre>
 <p>C'est fait ! Nous avons ajouté et préparé les images Cisco sur notre EVE-NG.</p>
-<p><img src="images/dash-eve.png" alt="Alt text"></p>
+<p><img src="../images/dash-eve.png" alt="Alt text"></p>
 <h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
 <ul>
 <li>Pour plus de détails, nous pouvons consulter les liens suivants: <a href="https://www.eve-ng.net/index.php/documentation/howtos/">How to create images</a></li>
