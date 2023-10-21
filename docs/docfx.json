@@ -20,7 +20,13 @@
     ],
     "resource": [
       {
-        "files": [ "**/images/**"],
+        "files": [ 
+          "**/images/**",
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg",
+          "images/**"
+        ],
         "exclude": [ "_site/**", "obj/**" ]
       }
     ],
