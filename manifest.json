@@ -37,6 +37,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/image.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/image.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/01.png",
       "output": {
         "resource": {
