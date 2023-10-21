@@ -64,7 +64,7 @@
 
 - Cliquons sur "**`Add Software Device`**." Dans la zone PID de base, commençons à taper "**`VEDGE-CLOUD-DNA`**" et sélectionne-le dans la liste déroulante lorsqu'il apparaît. Spécifions la `quantité` souhaitée (par exemple, 5, ce qui est généralement une bonne option), et sélectionnons le `nom du profil` que nous avons créé plus tôt.
 
-![Export-image-ubuntu](../images/vs.png)
+![Export-image-ubuntu](../images/vs.jpg)
 
 > [!NOTE]
 > Il y a une limite de 20 noeuds "gratuits".
