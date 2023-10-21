@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Ajouter Cisco Images (EVEng) | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Ajouter Cisco Images (EVEng) | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-ajoute-img-cisco.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ajouter-cisco-images-eveng">Ajouter Cisco Images (EVEng)</h1>
+
+<p>Une fois les fichiers téléchargés, nous allons ajouter les images Cisco <code>SD-WAN</code> et d'autres images sur EVE-NG en utilisant <code>SSH (Secure Shell)</code> et <code>SCP (Secure Copy Protocol)</code> pour transférer les fichiers vers notre instance EVE-NG.</p>
+<p><img src="images/images-cisco-backup.png" alt="Alt text"></p>
+<h2 id="créer-les-fichiers">Créer les fichiers</h2>
+<ul>
+<li>Nous allons d’abord nous connecter à <code>EVE-NG via SSH</code>, puis créer des fichiers dans EVE-NG.</li>
+</ul>
+<p><img src="images/add-img-cisco-eve.png" alt="Alt text"></p>
+<ul>
+<li>Voici les <code>commandes</code> de création de dossiers dont nous aurons besoin, comme indiqué :</li>
+</ul>
+<pre><code class="lang-bash">cd /opt/unetlab/addons/qemu
+mkdir vtedge-20.4.1 vtbond-20.4.1 vtsmart-20.4.1 vtmgmt-20.4.1 csr1000vng-universalk9.17.03.01a-serial viosl2-adventerprisek9-m.ssa.high_iron_20200929 asav-9.17-1-7
+</code></pre>
+<p><img src="images/dir-eve.png" alt="Alt text"></p>
+<ul>
+<li>Ensuite, à l'aide de la commande <code>scp</code> (Linux ou Windows), nous copions les fichiers (qcow) comme dans le tableau :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Dossier sur EVENG</th>
+<th>Image Cisco</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>vtedge-20.4.1</em></td>
+<td><em>viptela-<code>edge</code>-20.4.1-genericx86-64.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>vtsmart-20.4.1</em></td>
+<td><em>viptela-smart-20.4.1-genericx86-64.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>vtmgmt-20.4.1</em></td>
+<td><em>viptela-vmanage-20.4.1-genericx86-64.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>vtbond-20.4.1</em></td>
+<td><em>viptela-<code>edge</code>-20.4.1-genericx86-64.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>csr1000vng-ucmk9.16.12.2r-sdwan</em></td>
+<td><em>csr1000v-ucmk9.16.12.2r.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>csr1000vng-universalk9.17.03.01a-serial</em></td>
+<td><em>csr1000vng-universalk9.17.03.01a-serial.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>vios-adventerprisek9-m.SPA.159-3.M4</em></td>
+<td><em>vios-adventerprisek9-m.spa.159-3.m4.qcow2</em></td>
+</tr>
+<tr>
+<td><em>viosl2-adventerprisek9-m.ssa.high_iron_20200929</em></td>
+<td><em>vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2</em>.</td>
+</tr>
+<tr>
+<td><em>asav-9.17-1-7</em></td>
+<td><em>asav-9.17-1-7.qcow2</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ajout-dimages-sur-eve-ng">Ajout d'Images sur EVE-NG</h2>
+<p>Pour ajouter les images, utilisez un <code>terminal</code> sous Linux ou Windows et tapez les commandes suivantes en remplaçant tous les noms par &quot;virtioa&quot; :</p>
+<pre><code class="lang-bash"># Pour ASAV
+scp -r asav-9.17-1-7.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/asav-9.17-1-7/virtioa.qcow2
+# Router Node
+scp -r vios-adventerprisek9-m.spa.159-3.m4.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/vios-adventerprisek9-m.SPA.159-3.M4/virtioa.qcow2
+# Switch Node
+scp -r vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/viosl2-adventerprisek9-m.ssa.high_iron_20200929/virtioa.qcow2
+# CSR1000
+scp -r csr1000vng-universalk9.17.03.01a-serial.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/csr1000vng-universalk9.17.03.01a-serial/virtioa.qcow2
+# vEdge (viptela)
+scp -r viptela-edge-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/vtedge-20.4.1/virtioa.qcow2
+# vSmart (viptela)
+scp -r viptela-smart-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/vtsmart-20.4.1/virtioa.qcow2
+# Vbond
+scp -r viptela-edge-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/vtbond-20.4.1/virtioa.qcow2
+# Vmanager
+scp -r viptela-vmanage-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unetlab/addons/qemu/vtmgmt-20.4.1/virtioa.qcow2
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>vBond</code> et <code>vEdge</code> partagent la même image (viptela-<code>edge</code>-20.4.1-genericx86-64.qcow2).</p>
+</div>
+<p><img src="images/add-img.png" alt="Alt text"></p>
+<ul>
+<li>Maintenant, en utilisant <code>SSH</code> à distance sur l'instance <code>EVE-NG</code>, créons un <code>deuxième stockage</code> supplémentaire de disque dur de <code>100 Go</code> appelé &quot;<strong>virtiob.qcow2</strong>&quot; et corrigeons <code>les autorisations</code> :</li>
+</ul>
+<pre><code class="lang-bash">/opt/qemu/bin/qemu-img create -f qcow2 virtiob.qcow2 100G
+/opt/unetlab/wrappers/unl_wrapper -a fixpermissions
+</code></pre>
+<p>C'est fait ! Nous avons ajouté et préparé les images Cisco sur notre EVE-NG.</p>
+<p><img src="images/dash-eve.png" alt="Alt text"></p>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, nous pouvons consulter les liens suivants: <a href="https://www.eve-ng.net/index.php/documentation/howtos/">How to create images</a></li>
+</ul>
+<h2 id="mots-techniques">Mots Techniques</h2>
+<p><code>#Cisco #qcow #SDWAN #Switch #Router #vtedge #vtsmart #vtmgmt #vtbond #csr1000v #ASAV #virtioa #EVE-NG #SSH #SCP #SecureShell #SecureCopyProtocol #viptela #vmanage #virtiob #disque #stockage #permissions #instance #EVE-NG #transfert #fichiers #terminal #Linux #Windows #création #dossiers #qemu-img</code></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-ajoute-img-cisco.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

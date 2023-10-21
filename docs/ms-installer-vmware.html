@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Installation de VMware sur Windows 11 | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Installation de VMware sur Windows 11 | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-vmware.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="installation-de-vmware-sur-windows-11">Installation de VMware sur Windows 11</h1>
+
+<p>Pour installer <code>VMware</code> sur Windows 11, voici les étapes que nous devons suivre :</p>
+<h2 id="activer-la-virtualisation"><code>Activer la virtualisation</code></h2>
+<p>Nous devons d'abord nous assurer que la <code>virtualisation</code> matérielle est activée sur notre système hôte, car VMware Workstation en a besoin pour fonctionner. Cette fonction est généralement disponible sur la plupart des PC, mais elle peut être <strong><code>désactivée</code></strong> dans le <code>BIOS</code>. Voici comment procéder :</p>
+<ol>
+<li>Redémarrons notre PC.</li>
+<li>Accédons au BIOS de notre système. Nous pouvons généralement y accéder en appuyant sur une touche spécifique (comme F2, F12 ou Supprimer) au démarrage de notre ordinateur.</li>
+<li>Dans les paramètres du BIOS, activons la <code>technologie de virtualisation (VTx)</code>.</li>
+<li>Enregistrons les modifications et quittons le BIOS.</li>
+</ol>
+<h2 id="téléchargez-vmware"><code>Téléchargez VMware</code></h2>
+<p>Rendons-nous sur le site officiel de <a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html">VMware</a> pour télécharger la dernière version de VMware Workstation Pro compatible avec Windows 11.</p>
+<p><img src="images/vmware-down.png" alt="vmware-down"></p>
+<h2 id="exécution-le-programme"><code>Exécution le programme</code></h2>
+<p>Une fois le téléchargement terminé, exécutons le programme d'installation de <code>VMware Workstation Pro</code>. Suivons les instructions qui s'affichent à l'écran.</p>
+<p><img src="images/vmware.gif" alt="vmware-down"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Lors de l'installation, nous serons invités à accepter les conditions d'utilisation.</p>
+</div>
+<h2 id="finalisation-de-linstallation"><code>Finalisation de l'installation</code></h2>
+<p>Une fois que nous avons choisi les options d'installation, suivons le processus d'installation pour que VMware Workstation soit <code>installé</code> sur notre système.</p>
+<p><img src="images/install-vmware.gif" alt="vmware-down"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Voici une <code>clé de licence</code> complète pour VMware Workstation Pro : <code>4A4RR-813DK-M81A9-4U35H-06KND</code></p>
+</div>
+<p>Une fois que la clé de licence est acceptée, nous devrions avoir un accès complet à toutes les fonctionnalités de VMware Workstation Pro.</p>
+<h2 id="démarrage-de-vmware"><code>Démarrage de VMware</code></h2>
+<p>Après l'installation, lançons <code>VMware Workstation</code>. Nous serons prêts à créer et gérer des machines virtuelles sur Windows 11.</p>
+<p><img src="images/lancer-vmware.png" alt="vmware-down"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assurez-vous également que votre système Windows 11 répond aux <code>exigences minimales</code> de VMware Workstation pour garantir un fonctionnement optimal des machines virtuelles.</p>
+</div>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter le lien suivant sur <em>VMware Documentation</em> : <a href="https://docs.vmware.com/en/VMware-Workstation-Pro/index.html">VMware Workstation Pro Documentation</a>.</li>
+</ul>
+<h2 id="mots-techniques">Mots techniques</h2>
+<p><code>VMware, Workstation Pro, BIOS, virtualisation matérielle, technologie de virtualisation (VTx), pilotes VMware, RAM, stockage, machines virtuelles.</code></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-vmware.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

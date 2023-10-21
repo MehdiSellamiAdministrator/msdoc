@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Installer EVE-NG sur WMware | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Installer EVE-NG sur WMware | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-eveng-vmware.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="installer-eve-ng-sur-wmware">Installer EVE-NG sur WMware</h1>
+
+<p>L'installation d'<code>EVE-NG</code> sur VMware est un processus qui nous permet de créer une plateforme de virtualisation de réseau pour tester des configurations réseau. Voici les étapes pour réaliser cette installation.</p>
+<h4 id="objectif-4--installer-eve-ng-sur-wmware"><code>Objectif 4 : Installer EVE-NG sur WMware</code></h4>
+<h2 id="installation-et-configuration">Installation et configuration</h2>
+<p><em><code>Étape 1</code></em> : Téléchargement de la dernière version d'EVE-NG :</p>
+<ul>
+<li>Commençons par télécharger la dernière version d'EVE-NG Community Edition (Version 5.0.1-19) depuis le site Web officiel d'EVE-NG : <a href="https://mega.nz/file/mtUnHIoA#h5TtEOQModzgTtk9xX7vVSYmLh1jN0ISqmhpacunopA">Site Web EVE-NG</a>.</li>
+</ul>
+<p><em><code>Étape 2</code></em> : Préparation du fichier d'image</p>
+<ul>
+<li>Placez le fichier <code>EVE-COM-5.0.1-19</code> dans un répertoire de votre choix.</li>
+</ul>
+<p><img src="images/eveng-x.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Double-cliquez sur le fichier <code>.VMDK</code> d'EVE-NG.</li>
+</ul>
+<p><img src="images/ce-eveng.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Ouvrez automatiquement le fichier dans VMware Workstation Pro.</li>
+</ul>
+<p><img src="images/dm-eveng.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>L'importation de la machine virtuelle EVE-NG commencera. Attendez quelques minutes que l'importation soit terminée.</li>
+</ul>
+<p><img src="images/eve-xx.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Une fois l'importation terminée, cliquez sur &quot;<strong><code>Upgrade this virtual machine</code></strong>&quot; pour ajuster les paramètres de la machine virtuelle:</li>
+</ul>
+<p><img src="images/eve-dd.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Modifiez les paramètres par défaut, tels que la <code>mémoire</code> (20 Go), le <code>réseau</code> (NAT), le <code>nombre de coeurs</code> CPU (4), et <code>l'espace disque</code> (150 Go). Cliquez sur &quot;****OK&quot;.</li>
+</ul>
+<p><img src="images/new-eveng-config.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Après avoir apporté ces modifications, cliquez à nouveau sur &quot;<strong><code>Upgrade this virtual machine</code></strong>&quot;, puis suivez les étapes pour changer &quot;<strong><code>hardware compatibility</code></strong>&quot; en Workstation 17.</li>
+</ul>
+<p><img src="images/next.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Choisissez &quot;<strong><code>Alter this virtual machine</code></strong>&quot;, suivez les étapes et cliquez sur &quot;<strong><code>Finish</code></strong>&quot;.</li>
+</ul>
+<p><img src="images/finish.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<h2 id="démarrage-deve-ng">Démarrage d'EVE-NG</h2>
+<ul>
+<li>Après quelques minutes, notre machine virtuelle EVE-NG sur VMware Workstation sera installée. Pour commencer à utiliser EVE-NG, cliquez sur &quot;**<code>Power on this virtual machine*</code>*&quot;.</li>
+</ul>
+<p><img src="images/eve-start.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<p>Connectez-vous en utilisant les informations d'identification par défaut (<code>Login : root, Password : eve</code>).</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Les informations d'identification par défaut sont Login : <code>root</code> et Password : <code>eve</code>.</p>
+</div>
+<h2 id="configuration-finale-deve-ng">Configuration finale d'EVE-NG</h2>
+<p>Lorsque nous exécutons EVE-NG pour la première fois, suive les étapes à l'écran, qui incluent une fenêtre bleue où nous devrons appuyer sur &quot;<strong>OK</strong>&quot; à chaque fois. Les étapes d'installation et de configuration spécifiques peuvent varier en fonction de la version d'EVE-NG que vous avez téléchargée.</p>
+<p><img src="images/ms-eve-root.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li><code>Mises à jour du système</code>: Une fois la configuration d'EVE-NG terminée, assurez-vous de mettre à jour votre système en exécutant les commandes suivantes :</li>
+</ul>
+<pre><code class="lang-bash">sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+</code></pre>
+<ul>
+<li><code>Redémarrez</code> la machine virtuelle EVE-NG pour appliquer les mises à jour :</li>
+</ul>
+<pre><code class="lang-bash">sudo reboot
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Nous devrions maintenant être prêt à utiliser <code>EVE-NG</code> pour la virtualisation de réseaux.</p>
+</div>
+<ul>
+<li>Ouvrir EVE-NG dans notre navigateur &quot;<strong><code>Firefox Developer</code></strong>&quot; :</li>
+</ul>
+<p><img src="images/firefox-eve.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<h2 id="installer-windows-client-side">Installer Windows Client Side</h2>
+<p>Si vous souhaitez installer le client Windows, vous pouvez le télécharger depuis <a href="https://www.eve-ng.net/index.php/download/#DL-WIN">Windows Client Side</a>.</p>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter les liens suivants: <a href="https://www.eve-ng.net/index.php/documentation/">EVEng Documentation</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-eveng-vmware.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

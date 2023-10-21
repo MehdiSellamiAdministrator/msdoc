@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>V&#233;rification de la Connectivit&#233; | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="V&#233;rification de la Connectivit&#233; | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/test-connecter-reseau.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="vérification-de-la-connectivité">Vérification de la Connectivité</h1>
+
+<p>Pour tester la connexion entre les instances : Ubuntu WSL 2 et EVE-NG exécutant Virt-Manager avec KVM/QEMU sur l'hôte Windows 11, nous devons vérifier la connectivité.</p>
+<h2 id="informations-didentification">Informations d'identification</h2>
+<p>Les informations d'identification pour les appareils pour LAB-SDWAN sont les suivantes :</p>
+<table>
+<thead>
+<tr>
+<th>Composant</th>
+<th>Adresse IP</th>
+<th>Port</th>
+<th>Méthode</th>
+<th>Nom d'utilisateur</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>UbuntuWSL</em></td>
+<td><em>172.29.96.130</em></td>
+<td></td>
+<td></td>
+<td><em>msAuto</em></td>
+<td>*123456@Mehdi*</td>
+</tr>
+<tr>
+<td><em>EVEng</em></td>
+<td><em>192.168.122.29</em></td>
+<td></td>
+<td></td>
+<td><em>root</em></td>
+<td><em>eve</em></td>
+</tr>
+<tr>
+<td><em>EVEng</em></td>
+<td><em>192.168.122.29</em></td>
+<td><em>80</em></td>
+<td><em>HTTP</em></td>
+<td><em>admin</em></td>
+<td><em>eve</em></td>
+</tr>
+<tr>
+<td><em>hostWin11</em></td>
+<td><em>192.168.1.11</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Par défault : Routuer ISP 192.168.1.1</p>
+<p>Pour vérifier la connectivité réseau entre les instances Ubuntu WSL 2 et EVE-NG exécutant Virt-Manager avec KVM/QEMU sur l'hôte Windows 11, nous pouvons suivre ces étapes :</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assurons-nous que l'instance Ubuntu WSL 2 et les deux instances EVE-NG sont en cours d'exécution, et installons VS Code sur notre Windows 11 (hôte) et installons l'extension WSL sur VS Code.</p>
+</div>
+<h2 id="test-pour-instance-ubuntu-wsl-2">Test pour Instance Ubuntu WSL 2</h2>
+<ol>
+<li>Ouvrons Ubuntu WSL 2 dans le terminal de Windows 11 et tapons :</li>
+</ol>
+<pre><code class="lang-bash">code .
+</code></pre>
+<p><img src="images/vs-code-ubuntu.png" alt="VS Code in Ubuntu WSL2"></p>
+<ol start="2">
+<li>Nous pouvons également utiliser les éléments suivants pour localiser l'adresse IP de notre environnement WSL :</li>
+</ol>
+<pre><code class="lang-bash">ip addr show eth0 | awk -F'[ /]+' '$2==&quot;inet&quot; {print $3}'
+</code></pre>
+<p><img src="images/ip-ubuntu-wsl.png" alt="VS Code in Ubuntu WSL2"></p>
+<ol start="3">
+<li>Maintenant, testons la connectivité entre :</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Dest</th>
+<th>IP</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>UbuntuWSL</em></td>
+<td><em>Windows 11 (hosts)</em></td>
+<td>192.168.1.11</td>
+<td><em><code>Pass</code></em></td>
+</tr>
+<tr>
+<td><em>UbuntuWSL</em></td>
+<td><em>EVEng instance (KVM/QEMU)</em></td>
+<td>192.168.122.29</td>
+<td><em><code>Pass</code></em></td>
+</tr>
+<tr>
+<td><em>UbuntuWSL</em></td>
+<td><em>Internet</em></td>
+<td>onetech-group.com</td>
+<td><em><code>Pass</code></em></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-bash">ping 192.168.1.11 # Windows 11 (hosts)
+ping 192.168.122.29 # EVEng instance
+ping onetech-group.com # Internet
+</code></pre>
+<p><img src="images/testing-wsl-ping.png" alt="Test Ping"></p>
+<ol start="4">
+<li>D'après la sortie de la commande &quot;ip a&quot;, voici les informations sur les interfaces réseau de notre instance Ubuntu WSL 2 :</li>
+</ol>
+<pre><code class="lang-bash">ip a
+</code></pre>
+<p><img src="images/ip-a.png" alt="Test Ping"></p>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Adresse IPv4</th>
+<th>Adresse IPv6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><strong>lo (Loopback)</strong></em></td>
+<td>127.0.0.1/8</td>
+<td><em>::1/128</em></td>
+</tr>
+<tr>
+<td><em><strong>eth0</strong></em></td>
+<td><em>172.29.96.130/20</em></td>
+<td><em>fe80::215:5dff:fe2d:53cf/64</em></td>
+</tr>
+<tr>
+<td><em><strong>virbr0</strong></em></td>
+<td><em>192.168.122.1/24</em></td>
+<td><em>disable (Virt-Manager)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Vous pouvez utiliser ces informations pour mettre en place des règles de pare-feu, des routes ou des configurations réseau appropriées en fonction de vos besoins.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Virbr0, ou l'interface &quot;Virtual Bridge 0,&quot; est utilisée pour le NAT (Network Address Translation). Elle est fournie par la bibliothèque libvirt, et les environnements virtuels (Virt-Manager) l'utilisent pour se connecter au réseau extérieur.</p>
+</div>
+<ol start="5">
+<li>Pour vérifier le numéro, le port et le nom du processus :</li>
+</ol>
+<pre><code class="lang-bash">sudo netstat -plant
+</code></pre>
+<p><img src="images/netstat.png" alt="Netstat"></p>
+<ol start="6">
+<li>Nous pouvons aussi ouvrir n'importe quelle URL dans le navigateur Web par défaut de Windows 11 directement sur Ubuntu WSL :</li>
+</ol>
+<pre><code class="lang-bash">wslview https://onetech-group.com
+</code></pre>
+<p><img src="images/wslviews.png" alt="Netstat"></p>
+<h2 id="test-pour-instance-eveng">Test pour Instance EVEng</h2>
+<p>Pour tester la connectivité de l'instance EVE-NG, nous pouvons utiliser les informations fournies. Voici comment nous pouvons procéder :</p>
+<ol>
+<li>Vérification de la connectivité entre l'instance EVE-NG (KVM/QEMU) et Ubuntu WSL 2 avec l'adresse IP :</li>
+</ol>
+<pre><code class="lang-bash">ping 192.168.1.11 # Windows 11 (hosts) Pass
+ping 172.29.96.130 # Ubuntu WSL2 Pass
+ping onetech-group.com # Internet Pass
+</code></pre>
+<p><img src="images/eveng-ping.png" alt="Netstat"></p>
+<p>Ces étapes sont effectuées avec succès, cela confirmera que nous avons une connectivité réseau fonctionnelle entre l'instance EVE-NG et notre instance Ubuntu WSL 2, ainsi que Windows 11 (hôte) et Internet.</p>
+<ol start="2">
+<li>Maintenant, nous allons tester l'ouverture de l'interface graphique d'EVE-NG dans le navigateur. Tout d'abord, nous devons installer manuellement Google Chrome comme navigateur sur Ubuntu WSL 2 (Installer Google Chrome pour Linux) :</li>
+</ol>
+<pre><code class="lang-bash">cd /tmp
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt install --fix-broken -y
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+</code></pre>
+<p>Pour le lancer, entrez :</p>
+<pre><code class="lang-bash"># Installer Google Chrome pour Linux
+google-chrome http://192.168.122.29
+</code></pre>
+<p><img src="images/eveng-chrome-UI.png" alt="Netstat"></p>
+<p>En résumé, cette vérification de la connectivité et les étapes associées nous permettent de garantir que notre environnement est prêt à être utilisé pour nos projets et activités, offrant une base solide pour notre travail futur.</p>
+<h2 id="problèmes-potentiels-et-solutions">Problèmes Potentiels et Solutions</h2>
+<p>Lors de la vérification de la connectivité réseau, il est possible de rencontrer certains problèmes. Voici quelques problèmes potentiels et leurs solutions :</p>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème 1</em></td>
+<td><em>- Les instances WSL et EVE-NG ne peuvent pas se connecter</em>.</td>
+<td><em>eveng</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Assurez-vous que les instances sont en cours d'exécution</em>.</td>
+<td><em>ip -a</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- les adresses IP sont correctes</em>.</td>
+<td><em>disable</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- les règles de pare-feu permettent la communication entre elles.</em>.</td>
+<td><em>ufw or Iptables</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème 2</em></td>
+<td><em>- Le ping vers Internet échoue</em>.</td>
+<td><em>ISP</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Vérifiez la configuration de la passerelle par défaut</em>.</td>
+<td><em>Windows 11</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Les règles de pare-feu ne bloquent pas le trafic sortant.</em>.</td>
+<td><em>Windows 11</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème 3</em></td>
+<td><em>- L'installation de Google Chrome échoue sur Ubuntu WSL 2.</em>.</td>
+<td><em>Navigateur</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Assurez-vous que le package Google Chrome est téléchargé correctement</em>.</td>
+<td><em>WSL2 Ubuntu</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Suivez les étapes manuelle d'installation</em>.</td>
+<td><em>WSL2 Ubuntu</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème 3</em></td>
+<td><em>- L'accès à l'interface graphique d'EVE-NG dans le navigateur ne fonctionne pas</em>.</td>
+<td><em>Navigateur</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Vérifiez que Google Chrome est installé, que l'adresse IP est correcte</em>.</td>
+<td><em>WSL2 Ubuntu</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- les ports nécessaires sont ouverts pour l'accès à l'interface graphique.</em>.</td>
+<td><em>WSL2 Ubuntu</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème 3</em></td>
+<td><em>- GPU process exited unexpectedly</em>.</td>
+<td><em>Google Chrome</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Désactivation de l'accélération matérielle dans les paramètres avancés (chrome://settings/?search=hardware)</em>.</td>
+<td><em>Google Chrome</em></td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Utilisez Google Chrome sur Ubuntu WSL, car nous avons testé Firefox et Chromium, qui fonctionnent, mais il y a des problèmes de D-Bus (notre D-Bus.service fonctionne sur Ubuntu). Nous avons essayé de corriger ces problèmes, mais ils concernent spécifiquement Firefox et Chromium. Nous avons donc choisi d'utiliser Google Chrome.</p>
+</div>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter les liens suivants: <a href="https://learn.microsoft.com/fr-fr/windows/wsl/tutorials/gui-apps">Exécuter des applications d’interface utilisateur graphique Linux sur WSL</a>, <a href="https://www.eve-ng.net/index.php/documentation/">EVEng</a>, <a href="https://support.google.com/chrome/a/answer/9025903?hl=fr">Installer le navigateur Chrome sur Linux</a></li>
+</ul>
+<h2 id="mots-techniques">Mots techniques</h2>
+<p>#Connectivité #Réseau #WSL #EVE-NG #KVM #QEMU #VSCode #Pare-feu #NAT</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/test-connecter-reseau.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Les composants Cisco SD-WAN | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Les composants Cisco SD-WAN | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-cisco-images.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="les-composants-cisco-sd-wan">Les composants Cisco SD-WAN</h1>
+
+<p>Le <code>SD-WAN</code> (Software-Defined Wide Area Network) de Cisco est une solution complète pour optimiser et gérer les réseaux étendus. Le SD-WAN de Cisco se compose de plusieurs composants clés, notamment :</p>
+<ol>
+<li><code>vEdge &amp; cEdge</code> (Data plan),</li>
+<li><code>vSmart</code> (Control plan),</li>
+<li><code>vManage</code> (Management plan),</li>
+<li><code>vBond</code> (orchestration plan).</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>Viptela</code> a été fondée en 2012 par d'anciens directeurs de Cisco, <code>Amir Khan</code> et <code>Khalid Raza</code>. En 2017,
+Cisco a acquis Viptela pour 610 millions de dollars. Viptela correspondait parfaitement aux principes de
+sécurité, de virtualisation, d'automatisation et d'analyse inscrits dans <code>DNA</code> (Digital Network
+Architecture).</p>
+</div>
+<p><strong>Objectifs</strong>: Examinons les différents composants qui composent le SD-WAN (Cisco) (ou SD-WAN Secure Extensible Network [SEN] comme ils l'appellent également).</p>
+<h2 id="vedge-and-cedge">vEdge and cEdge</h2>
+<p>Le dispositif en bordure (ou <strong>edge device</strong>) gère la <code>transmission</code> des paquets ; ils établissent le réseau virtuel sécurisé en <code>superposition</code> (overlay) :</p>
+<h6 id="1-périphériques-vedge-pour-les-bureaux-à-domicile-soho"><strong><code>1. Périphériques vEdge pour les bureaux à domicile (SOHO)</code></strong></h6>
+<table>
+<thead>
+<tr>
+<th>Router/Modèle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/vedge/hardware/vEdge-routers-hardware-installation-guide/vEdge-routers-hardware-installation-guide_chapter_010.html">vEdge 100b</a></em></td>
+<td><em>Avec une connectivité <code>Ethernet</code> uniquement</em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/vedge/hardware/vEdge-routers-hardware-installation-guide/vEdge-routers-hardware-installation-guide_chapter_0101.html">vEdge 100m</a></em></td>
+<td><em>Avec une connectivité <code>Ethernet</code> et un modem <code>2G/3G/4G</code> intégré</em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/vedge/hardware/vEdge-routers-hardware-installation-guide/vEdge-routers-hardware-installation-guide_chapter_0101.html">vEdge 100wm</a></em></td>
+<td><em>Similaire au vEdge 100m, mais avec une fonctionnalité <code>LAN sans fil</code></em>.</td>
+</tr>
+</tbody>
+</table>
+<h6 id="2-périphériques-vedge-pour-les-grandes-entreprises"><strong><code>2. Périphériques vEdge pour les grandes entreprises</code></strong></h6>
+<table>
+<thead>
+<tr>
+<th>Router/Modèle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/vedge/hardware/vEdge-routers-hardware-installation-guide/vEdge-routers-hardware-installation-guide_chapter_0100.html">vEdge 1000</a></em></td>
+<td><em>Avec 8 ports GE SFP fixes</em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/vedge/hardware/vEdge-routers-hardware-installation-guide/vEdge-routers-hardware-installation-guide_chapter_01000.html">vEdge 2000</a></em></td>
+<td><em>Avec 2 modules d'interface enfichables</em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/vedge/hardware/vEdge-routers-hardware-installation-guide/vEdge-routers-hardware-installation-guide_chapter_01001.html">vEdge 5000</a></em></td>
+<td><em>Avec 4 modules d'interface réseau</em>.</td>
+</tr>
+</tbody>
+</table>
+<h6 id="3-périphériques-isr-integrated-services-router-basé-sur-ios-xe"><strong><code>3. Périphériques ISR (Integrated Services Router) basé sur IOS XE</code></strong></h6>
+<table>
+<thead>
+<tr>
+<th>Router/Modèle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/isr-series-br-platforms-arch.html">ISR 1100 and ISR 1100X Series</a></em></td>
+<td><em>Pour les <strong>déploiements</strong> de <code>petites</code> et <code>moyennes</code> succursales (4G &amp; 6G).</em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://content.cisco.com/chapter.sjs?uri=/searchable/chapter/content/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html.xml#:%7E:text=The%20Cisco%201000%20series%20Integrated%20Services%20Routers%20are,as%20customer%20premises%20equipment%20in%20managed%20services%20environments.">ISR 1000 series</a></em></td>
+<td><em>Pour les <code>petites</code> et <code>moyennes</code> entreprises, les <code>succursales d'entreprise</code> et les <code>environnements de services gérés</code></em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/products/routers/4000-series-integrated-services-routers-isr/index.html">ISR 4000 series</a></em></td>
+<td><em>Adaptés aux solutions de réseau de type &quot;<code>Branch-Office</code>&quot;</em>.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Mon encadreur Mr. Hamza a insisté sur l'importance de choisir des dispositifs basés sur IOS XE pour leur fiabilité, leur sécurité et leur évolutivité. Cette recommandation renforce notre confiance dans ces périphériques pour notre projet.</p>
+</div>
+<h6 id="4-périphériques-asr-aggregation-services-router"><strong><code>4. Périphériques ASR (Aggregation Services Router)</code></strong></h6>
+<table>
+<thead>
+<tr>
+<th>Router/Modèle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html">ASR 1000 series</a></em></td>
+<td><em>Routeurs de <code>niveau intermédiaire</code> adaptés aux réseaux de <code>taille moyenne</code></em>.</td>
+</tr>
+</tbody>
+</table>
+<h6 id="5-périphériques-vedge-cloud-et-csr1000v-pour-le-cloud"><strong><code>5. Périphériques vEdge Cloud et CSR1000v pour le cloud</code></strong></h6>
+<table>
+<thead>
+<tr>
+<th>Router/Modèle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/solutions/collateral/enterprise-networks/sd-wan/nb-07-cloud-router-data-sheet-cte-en.html#:%7E:text=Cisco%20vEdge%20Cloud%20is%20a%20software%20router%20platform,of%20private%2C%20public%2C%20and%20hybrid%20cloud%20computing%20environments.">vEdge Cloud</a></em></td>
+<td><em>Fonctionne sur des plateformes <code>hyperviseur</code> et dans des environnements de <code>cloud privé, public et hybride</code></em>.</td>
+</tr>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/products/collateral/routers/cloud-services-router-1000v-series/data_sheet-c78-733443.html">CSR1000v</a></em></td>
+<td><em><code>Routeur virtuel</code> offrant des fonctions de passerelle WAN complètes pour les environnements <code>virtuels</code> et <code>cloud</code></em>.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Le périphérique vEdge Cloud peut fonctionner dans VMWare ESXi, KVM, AWS et Azure, et c'est cette image que utiliser le plus (avec le CSR1000v).</p>
+</div>
+<h2 id="vsmart-devices">vSmart devices</h2>
+<table>
+<thead>
+<tr>
+<th>Périphérique</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/configuration/sdwan-xe-gs-book/system-overview.html">vSmart</a></em></td>
+<td>* Gère <code>le routage et la connectivité</code> entre les dispositifs <code>vEdge</code> après l'authentification par l'orchestrateur <code>vBond</code>*.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vmanage-devices">vManage devices</h2>
+<table>
+<thead>
+<tr>
+<th>Périphérique</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/site/us/en/products/networking/wan/vmanage/index.html#tabs-ca9b217826-item-1b113ceb83-tab">vManage</a></em></td>
+<td><em>Système de gestion de réseau (NMS) pour configurer et gérer le réseau SD-WAN de Cisco</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vbond-devices">vBond devices</h2>
+<table>
+<thead>
+<tr>
+<th>Périphérique</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><a href="https://www.cisco.com/site/us/en/products/networking/wan/vmanage/index.html#tabs-ca9b217826-item-1b113ceb83-tab">vBond</a></em></td>
+<td><em>Gère l'authentification, l'autorisation et la communication entre les dispositifs vEdge et vSmart. Il facilite l'intégration du réseau, en particulier pendant le processus d'intégration</em>.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Le SD-WAN de Cisco est une solution globale qui combine ces composants pour optimiser et gérer les réseaux étendus de manière efficace et sécurisée.</p>
+</div>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter les liens suivants: <a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/configuration/sdwan-xe-gs-book/system-overview.html">Cisco Catalyst SD-WAN Getting Started Guide</a>.</li>
+</ul>
+<h2 id="mots-techniques">Mots techniques</h2>
+<p><code>#SDWAN (Software-Defined Wide Area Network), #vEdge, #cEdge, #vSmart, #vManage, #vBond, #Viptela, #DNA (Digital Network Architecture), #IOSXE, #ISR, #ASR, #vEdgeCloud, #CSR1000v, #hyperviseur, #cloudprivé, #cloudpublic, #cloudhybride, #routeurvirtuel, #NMS (Network Management System).</code></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-cisco-images.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

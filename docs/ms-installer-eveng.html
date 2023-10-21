@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Installer EVE-NG | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Installer EVE-NG | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-eveng.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="installer-eve-ng">Installer EVE-NG</h1>
+
+<p><code>EVE-NG</code> (Emulated Virtual Environment - Next Generation) est un logiciel de virtualisation réseau.</p>
+<h4 id="objectif-4--installer-eve-ng-sur-kvmqemu"><code>Objectif 4 : Installer EVE-NG sur KVM/Qemu</code></h4>
+<h2 id="installation-et-configuration">Installation et configuration</h2>
+<p>Voici les étapes pour l'installation et la configuration d'EVE-NG (Emulated Virtual Environment - Next Generation) :</p>
+<p><em><code>Étape 1</code></em> : Téléchargement de la dernière version d'EVE-NG :</p>
+<p>Téléchargez la dernière version de la communauté gratuite d'EVE-NG (Version 5.0.1-19) depuis le site Web d'EVE-NG : <a href="https://mega.nz/file/mtUnHIoA#h5TtEOQModzgTtk9xX7vVSYmLh1jN0ISqmhpacunopA">Site Web EVE-NG</a>.</p>
+<p><em><code>Étape 2</code></em> : Préparation du fichier d'image</p>
+<ul>
+<li>Placez le fichier <code>EVE-CE-0.vmdk</code> dans un répertoire de votre choix.</li>
+</ul>
+<p><img src="/images/vmdk.png" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<ul>
+<li>Utilisez la commande <code>qemu-img</code> pour convertir le fichier d'image au format <code>.vmdk</code> en <code>.qcow2</code> :</li>
+</ul>
+<pre><code class="lang-bash">qemu-img convert -f vmdk -O qcow2 EVE-CE-0.vmdk EVEms.qcow2
+</code></pre>
+<ul>
+<li>Donner une taille de <code>80 Go</code> à EVEms.qcow2.</li>
+</ul>
+<pre><code class="lang-bash">qemu-img resize EVEms.qcow2 80G
+</code></pre>
+<p><em><code>Étape 3</code></em> : Configuration de Virt-Manager</p>
+<ul>
+<li>Lancez <code>Virt-Manager</code> en utilisant la commande suivante :</li>
+</ul>
+<pre><code class="lang-bash">virt-manager
+</code></pre>
+<ul>
+<li>Dans <code>Virt-Manager</code>, ajoutez l'image <code>EVEms.qcow2</code> en suivant ces étapes :</li>
+</ul>
+<p><img src="/images/ms-eve.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<p><em><code>Étape 4</code></em> : Configuration finale d'EVE-NG</p>
+<p>Lorsque vous exécutez EVE-NG pour la première fois, suivez les étapes à l'écran, qui incluent une fenêtre bleue où nous devrons appuyer sur &quot;OK&quot; à chaque fois. Les étapes d'installation et de configuration spécifiques peuvent varier en fonction de la version d'EVE-NG que vous avez téléchargée.</p>
+<p><img src="/images/ms-eve-root.gif" alt="Free EVE Community Edition Version 5.0.1-19"></p>
+<p><em><code>Étape 5</code></em> : Mises à jour du système</p>
+<ul>
+<li>Après avoir configuré EVE-NG, exécutez les commandes suivantes pour mettre à jour notre système :</li>
+</ul>
+<pre><code class="lang-bash">sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+</code></pre>
+<p><em><code>Étape 6</code></em> : Redémarrage de la machine virtuelle EVE-NG</p>
+<p>Redémarrez la machine virtuelle EVE-NG pour appliquer les mises à jour :</p>
+<pre><code class="lang-bash">sudo reboot
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Nous devrions maintenant être prêt à utiliser EVE-NG pour la virtualisation de réseaux.</p>
+</div>
+<h2 id="installer-linux-client-side">Installer Linux Client Side</h2>
+<p>Cette version de EVE-NG Integration prend en charge divers schémas d'URL tels que <code>telnet://</code>, <code>capture://</code>, <code>docker://</code>, et <code>vnc://</code> (via Vinagre). De plus, elle inclut un script pour travailler avec les fichiers <code>.rdp</code> générés par EVE-NG, ce qui facilite l'intégration de cette solution sur des systèmes Ubuntu/Debian et d'autres distributions Linux.</p>
+<p>Pour Windows : <a href="https://www.eve-ng.net/index.php/download/#DL-WIN">Windows Client Side</a>.</p>
+<p><em><code>Étape 7</code></em> : Télecharger Linux Client Side</p>
+<p><a href="https://launchpad.net/%7Esmartfinn/+archive/ubuntu/eve-ng-integration/+packages">Packages in “eve-ng-integration”</a></p>
+<p><img src="/images/linux-client-side-new.png" alt="Linux Client Side"></p>
+<ul>
+<li>Alternativement, vous pouvez installer <code>eve-ng-integration</code> depuis le terminal à l'aide de la commande suivante :</li>
+</ul>
+<pre><code class="lang-bash"># Vous pouvez installer eve-ng-integration à partir du PPA officiel :
+sudo add-apt-repository ppa:smartfinn/eve-ng-integration
+sudo apt-get update
+sudo apt-get install eve-ng-integration
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>La configuration de <code>wireshark-common</code> offre la possibilité d'installer <code>Dumpcap</code> de manière à permettre aux membres du groupe système &quot;wireshark&quot; de <code>capturer des paquets</code>. La question posée est : <em>&quot;Les utilisateurs non superutilisateurs devraient-ils être autorisés à capturer des paquets ?&quot;</em>.</p>
+</div>
+<p><img src="/images/wireshark.png" alt="Linux Client Side"></p>
+<p>Si vous utilisez une distribution de type <code>Debian</code>, nous pouvons exécuter la commande suivante et choisir la réponse <code>Oui</code> (si on veut):</p>
+<pre><code class="lang-bash">sudo usermod -a -G wireshark $USER
+sudo dpkg-reconfigure wireshark-common
+</code></pre>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter les liens suivants: <a href="https://www.eve-ng.net/index.php/documentation/">EVEng Documentation</a>, <a href="https://github.com/SmartFinn/eve-ng-integration">Linux Client Side sur Github</a>, <a href="https://launchpad.net/%7Esmartfinn/+archive/ubuntu/eve-ng-integration">PPA</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-eveng.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

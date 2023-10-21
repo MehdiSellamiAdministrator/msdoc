@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Export/Backup Distribution | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Export/Backup Distribution | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms_export-backup.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="exportbackup-distribution">Export/Backup Distribution</h1>
+
+<h2 id="backup-distribution-ubuntu-eveng">Backup Distribution Ubuntu-EVEng</h2>
+<p>Nous devrions tous effectuer régulièrement des <code>sauvegardes</code> de nos systèmes. En particulier si nous avons personnalisé notre environnement WSL2 avec nos packages et paramètres préférés, kvm, qemu, EVEng. Il peut également être utile de partager cet environnement avec un collègue travaillant sur le même projet.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Gardez à l'esprit que ce processus de sauvegarde peut prendre du temps.</p>
+</div>
+<p>EVE-NG</p>
+<p><em>Pour effectuer une sauvegarde ou exporter une distribution WSL2, suivez ces étapes :</em></p>
+<ol>
+<li><p>Ouvrir <code>PowerShell</code>, en tant qu'administrateur.</p>
+</li>
+<li><p>Tapez la commande suivante pour déterminer les distributions Linux disponibles et appuyez sur Entrée :</p>
+</li>
+</ol>
+<pre><code class="lang-bash">wsl --list
+</code></pre>
+<p><img src="images/wsl-export.png" alt="Export-image-ubuntu"></p>
+<ol start="3">
+<li>Tapons la commande suivante pour créer une <code>sauvegarde de la distribution WSL</code> et appuyez sur Entrée :</li>
+</ol>
+<pre><code class="lang-bash"># wsl.exe --export &lt;name of distribution&gt; &lt;filename of exported image&gt;
+wsl.exe --export Ubuntu-22.04 C:\WSL\ubuntu-onetech-backup.tar.gz
+</code></pre>
+<p><img src="images/export-ubuntu-onetech.png" alt="Export-image-ubuntu"></p>
+<p>Veuillons noter qu'il n'y a pas de barre de progression pour suivre l'avancement. pour moi cette processus avec presque 18 GO reste 3 minute.</p>
+<p><img src="images/backup-finish.png" alt="Export-image-ubuntu"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pour utiliser cette distribution, n'oubliez pas d'ajouter notre propre <code>noyau</code> pour l'ajouter et également d'installer le module pour <code>Kvm_amd ou Kvm_intel</code> ; C'est aussi simple que d'utiliser quelques commandes et de changer le mot <code>amd</code> en <code>intel</code> ; Du côté du noyau, j'ai ajouté <code>AMD et Intel</code> ; Voir cet article [].</p>
+</div>
+<h2 id="import-distribution-ubuntu-eveng">Import Distribution Ubuntu-EVEng</h2>
+<p>L'importation d'une image s'effectue de la manière suivante :</p>
+<ol>
+<li>Ajouter notre propre noyau (Kernel) dans ce chemin: <code>&quot;C:\Users\\%USERNAME%\\bzImage&quot;</code>.</li>
+</ol>
+<p><img src="images/import-image.png" alt="Import-kernel-linux"></p>
+<ol start="2">
+<li>Créez un fichier <code>.wslconfig</code> dans le répertoire <code>&quot;C:\\Users\\%USERNAME%\\.wslconfig&quot;</code> contenant la configuration suivante :</li>
+</ol>
+<pre><code class="lang-ini">[wsl2]
+kernel=C:\\Users\\sella\\bzImage
+autoMemoryReclaim=enable
+memory=12GB # Voir votre memoire et changer 
+processors=6 # Voir les coeurs du votre CPU
+swap=4GB
+swapfile=C:\\wslswap.vhdx
+localhostForwarding=true
+nestedVirtualization=true
+</code></pre>
+<ol start="3">
+<li>L'importation d'une image s'effectue de la manière suivante :</li>
+</ol>
+<pre><code class="lang-bash">wsl.exe --import Ubuntu-EVEng C:\WSL\Ubuntu-WSL\ C:\WSL\ubuntu-onetech-backup.tar.gz --version 2
+</code></pre>
+<ol start="4">
+<li>Utilisons la commande <code>wsl -l -v</code> pour vérifier :</li>
+</ol>
+<pre><code class="lang-bash">wsl -l -v
+</code></pre>
+<ol start="5">
+<li>Enfin, utilisons la commande <code>wsl -d Ubuntu-EVEng</code> pour exécuter votre distribution Linux CentOS nouvellement importée.</li>
+</ol>
+<pre><code class="lang-bash">wsl -d Ubuntu-EVEng
+</code></pre>
+<ol start="6">
+<li>Par défaut, lorsque nous utilisons <code>--import</code>, nous démarrons toujours en tant qu'utilisateur <code>root</code>. Nous pouvons créer notre propre compte <code>utilisateur</code>, à l'aide de ces commandes :</li>
+</ol>
+<pre><code class="lang-bash">wsl -d Ubuntu-EVEng
+sudo apt update &amp;&amp; sudo apt install sudo -y
+sudo adduser &lt;nom_utilisateur&gt;
+sudo usermod -aG sudo &lt;nom_utilisateur&gt;
+echo -e &quot;[user]\ndefault=&lt;nom_utilisateur&gt;&quot; | sudo tee -a /etc/wsl.conf
+</code></pre>
+<ol start="7">
+<li>Nous devons maintenant <code>quitter</code> cette instance et nous assurer que toutes les instances WSL sont terminées.</li>
+</ol>
+<pre><code class="lang-bash">wsl --terminate Ubuntu-EVEng
+</code></pre>
+<ol start="8">
+<li>Redémarrons notre distribution pour voir notre nouvel utilisateur par défaut en exécutant cette commande :</li>
+</ol>
+<pre><code class="lang-bash"># [nom_utilisateur@hostname]$ 
+wsl -d Ubuntu-EVEng
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Path</th>
+<th>OS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Notre Kernel Linux</em></td>
+<td><em>- C:\Users\%USERNAME%\bzImage</em></td>
+<td><em>Windows</em></td>
+</tr>
+<tr>
+<td><em>.wslconfig</em></td>
+<td><em>- C:\Users\%USERNAME%\.wslconfig</em></td>
+<td><em>Windows</em></td>
+</tr>
+<tr>
+<td><em>Image EVEng Qemu</em></td>
+<td><em>- /home/msauto/EVE-COM-5.0.1-19/EVEms.qcom2</em></td>
+<td><em>Linux</em></td>
+</tr>
+<tr>
+<td><em>EVEms2023-clone</em></td>
+<td><em>- /home/msauto/EVE-COM-5.0.1-19/EVEms-clone.qcow2</em></td>
+<td><em>Linux</em></td>
+</tr>
+<tr>
+<td><em>Linux Client Side</em></td>
+<td><em>- /home/msauto/eve-ng-integration</em></td>
+<td><em>Linux</em></td>
+</tr>
+<tr>
+<td><em>WSL2-Linux-Kernel</em></td>
+<td><em>- /home/msauto/WSL2-Linux-Kernel</em></td>
+<td><em>Linux</em></td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms_export-backup.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

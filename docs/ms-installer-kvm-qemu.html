@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Virtualisation avec KVM | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Virtualisation avec KVM | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-kvm-qemu.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="virtualisation-avec-kvm">Virtualisation avec KVM</h1>
+
+<p>Pour installer KVM sur une distribution <code>Ubuntu</code> dans WSL 2, nous devrons reconstruire le noyau (kernel) Microsoft. Cela implique le téléchargement de la configuration du noyau, sa modification, et enfin la reconstruction du noyau.</p>
+<h4 id="objectif-2--installer-kvm-sur-wsl-2"><code>Objectif 2 : Installer KVM sur WSL 2</code></h4>
+<p>Le noyau Microsoft WSL 2 est disponible sur GitHub <a href="https://github.com/microsoft/WSL2-Linux-Kernel/">WSL2-Linux-Kernel</a></p>
+<h2 id="update-and-upgrade">Update and upgrade</h2>
+<p>Nous nous recommandons de maintenir nos packages à jour en utilisant le gestionnaire de packages de notre distribution. Pour Ubuntu, utilisez la commande suivante :</p>
+<pre><code class="lang-bash">sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre>
+<blockquote>
+<p>Windows ne gère pas les mises à jour ou les mises à niveau de notre distribution Linux.</p>
+</blockquote>
+<h2 id="construire-notre-propre-noyau">Construire notre propre noyau</h2>
+<ol>
+<li>Utilisons <code>git</code> dans Ubuntu pour cloner le code source du noyau WSL 2 :</li>
+</ol>
+<pre><code class="lang-bash">git clone --depth 1 https://github.com/microsoft/WSL2-Linux-Kernel
+</code></pre>
+<ol start="2">
+<li>Installons les <code>dépendances</code> nécessaires pour la construction de notre noyau en utilisant apt :</li>
+</ol>
+<pre><code class="lang-bash">sudo apt -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+</code></pre>
+<ol start="3">
+<li>Changeons de répertoire en accédant au dossier du projet Git :</li>
+</ol>
+<pre><code class="lang-bash">cd WSL2-Linux-Kernel/
+</code></pre>
+<ol start="4">
+<li>Copions le fichier de config du noyau de Microsoft dans le dossier racine du projet sous le nom <code>.config</code> :</li>
+</ol>
+<pre><code class="lang-bash">cp Microsoft/config-wsl .config
+</code></pre>
+<ol start="5">
+<li>Ouvrons le fichier de config avec un éditeur de texte comme Nano, Vim ou <code>VS Code</code> :</li>
+</ol>
+<pre><code class="lang-bash">#  Nous préférons utiliser VS Code
+code . 
+</code></pre>
+<ol start="6">
+<li>Les modifications manuelles à effectuer sont les suivantes :</li>
+</ol>
+<pre><code class="lang-ini">KVM_GUEST=y
+CONFIG_KVM=y
+CONFIG_KVM_INTEL=m # Pour Intel CPU
+CONFIG_KVM_AMD=m # Pour AMD CPU
+CONFIG_VHOST=y
+</code></pre>
+<ol start="7">
+<li>Éditons les options du noyau :</li>
+</ol>
+<pre><code class="lang-bash">make menuconfig
+</code></pre>
+<ol start="8">
+<li>Après un peu de compilation, nous accéderons au menu de <code>config du noyau Linux</code>.</li>
+</ol>
+<p><img src="images/menuconfig.png" alt="Configuring the kernel using menuconfig"></p>
+<ol start="9">
+<li>Accédons à <code>Processor type and features</code>, puis <code>Linux guest support</code>, et activons <code>KVM Guest support</code>.</li>
+</ol>
+<p><img src="images/enable-kvm.png" alt="Enabled KVM Guest support"></p>
+<ol start="10">
+<li><p>Ensuite, utilisons les touches fléchées gauche et droite pour sélectionner <code>Exit</code> et appuyons deux fois sur Entrée pour revenir au niveau supérieur du répertoire de configuration.</p>
+</li>
+<li><p>Utilisons la touche Entrée pour accéder au répertoire <code>Virtualisation</code>. Ici, utilisons la barre d'espace ou la touche <code>Y</code> pour le marquer avec un astérisque (*) pour activer le <code>Kernel-based Virtual Machine (KVM) support</code>. Activons également <code>KVM for AMD processors support</code> en tant que module avec la touche <code>M</code>.</p>
+</li>
+</ol>
+<p><img src="images/module.png" alt="Enabling Kernel-based Virtual Machine"></p>
+<ol start="12">
+<li>Sélectionnons &quot;Exit&quot; deux fois et nous serons invités à enregistrer notre nouvelle configuration. Sélectionnons <code>Yes</code>.</li>
+</ol>
+<p><img src="images/yes.png" alt="Prompt to save your new Kernel configuration"></p>
+<ol start="13">
+<li>Ensuite, nous construisons notre noyau en utilisant la commande <code>make</code>.</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Après avoir exécuté cette commande, nous pourrions rencontrer deux erreurs. La première nous informera que
+l'outil <code>bc</code> (calculatrice binaire) n'est pas installé sur notre système. La deuxième erreur signalera un
+problème dans la génération du format <code>BTF</code> (BPF Type Format) du noyau Linux. Le BTF est essentiel pour le
+débogage et l'analyse du noyau.</p>
+</div>
+<p>Pour résoudre ce problème, nous devons installer <code>bc</code> et <code>dwarves</code> sur notre système. Voici comment procéder :</p>
+<pre><code class="lang-bash">sudo apt update
+sudo apt install bc
+sudo apt install dwarves
+</code></pre>
+<ol start="14">
+<li>Maintenant, nous construisons notre noyau (8 cœurs) :</li>
+</ol>
+<pre><code class="lang-bash">make -j 8
+</code></pre>
+<p><img src="images/ms-is-ready.png" alt="Prompt to save your new Kernel configuration"></p>
+<p>Ah, les plaisirs de l'observation de la construction du noyau Linux !</p>
+<ol start="15">
+<li>Si la compilation réussit, nous serons informés que le noyau est prêt :</li>
+</ol>
+<pre><code class="lang-bash">Kernel: arch/x86/boot/bzImage is ready
+</code></pre>
+<ol start="16">
+<li>Maintenant, nous devons créer et installer les fonctionnalités que nous avons signalées comme <code>modules</code>. Ils seront installés sur notre système de fichiers de distribution dans <code>/lib/modules</code> car ils ne sont pas intégrés au noyau :</li>
+</ol>
+<pre><code class="lang-bash">sudo make modules_install
+</code></pre>
+<ol start="17">
+<li>Déplaçons <code>notre propre noyau</code> vers notre système de fichiers Windows pour le rendre accessible à WSL 2 :</li>
+</ol>
+<pre><code class="lang-bash">cp arch/x86/boot/bzImage $(wslpath $(wslvar USERPROFILE))
+</code></pre>
+<ol start="18">
+<li>Ensuite, ouvrons le fichier <code>.wslconfig</code> pour utiliser notre noyau personnalisé :</li>
+</ol>
+<pre><code class="lang-ini">kernel=C:\\Users\\sella\\bzImage
+nestedVirtualization=true
+</code></pre>
+<p><img src="images/bzimages.png" alt="Configuring .wslconfig to use our custom Linux kernel"></p>
+<ol start="19">
+<li>Créons un fichier appelé <code>kvm-ms</code> pour définir les options de notre module &quot;KVM for AMD processors support&quot;, appelé <code>kvm-amd</code> :</li>
+</ol>
+<pre><code class="lang-bash">sudo vim /etc/modprobe.d/kvm-ms.conf
+</code></pre>
+<ol start="20">
+<li>Ajoutons les options suivantes pour activer la Nested virtualization et d'autres options avancées :</li>
+</ol>
+<pre><code class="lang-bash"># Nested virtualization et vitesse
+options kvm-amd nested=1
+options kvm-amd enable_shadow_vmcs=1
+options kvm-amd enable_apicv=1
+options kvm-amd ept=1
+# Enregistrons et quittons.
+</code></pre>
+<ol start="21">
+<li>Ensuite, <code>redémarrons</code> notre environnement WSL avec notre nouveau noyau :</li>
+</ol>
+<pre><code class="lang-powershell">wsl.exe --shutdown # Powershell
+</code></pre>
+<ol start="22">
+<li>Une fois redémarré, nous pouvons confirmer que nous exécutons le nouveau noyau :</li>
+</ol>
+<pre><code class="lang-bash">uname -ar
+</code></pre>
+<p><img src="images/ms-newkernel.png" alt="Confirmer que nous exécutons notre noyau personnalisé"></p>
+<ol start="23">
+<li>Installons un outil appelé <code>kvm-ok</code> pour confirmer la disponibilité de la fonctionnalité <code>KVM nested</code> :</li>
+</ol>
+<pre><code class="lang-bash">sudo apt -y install cpu-checker
+# Exécutons &quot;kvm-ok&quot; :
+kvm-ok
+# Le module générera un message indiquant que &quot;/dev/kvm existe.&quot;
+</code></pre>
+<p><img src="images/kvm-ok.png" alt="le module génère un message /dev/kvm existe"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Si nous recevons le message <code>KVM acceleration can be used</code>, nous avons chargé avec succès le module du noyau &gt; et KVM fonctionne désormais. Félicitations !</p>
+</div>
+<ol start="24">
+<li>Enfin, nous pouvons confirmer le support de la KVM nested virtualization et configurer les autorisations d'accès pour <code>/dev/kvm</code> :</li>
+</ol>
+<pre><code class="lang-bash">cat /sys/module/kvm_intel/parameters/nested # Y ou 1 = is enable
+sudo chmod 666 /dev/kvm
+</code></pre>
+<h2 id="problèmes-potentiels-et-solutions">Problèmes Potentiels et Solutions</h2>
+<p>Lors de l'installation de KVM sous WSL 2 Windows, nous pourrions rencontrer <em>certains problèmes</em>, mais voici les solutions proposées :</p>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème 1</em></td>
+<td><em>- WSL ne prend pas en charge systemd</em>.</td>
+<td><em>init</em></td>
+</tr>
+<tr>
+<td><em>Problème 2</em></td>
+<td><em>- Acceleration for KVM guests n'est pas activée</em>.</td>
+<td><em>disable</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Construire notre propre noyau</em>.</td>
+<td><em>bzImage</em></td>
+</tr>
+<tr>
+<td><em>Problème 3</em></td>
+<td><em>- KVM support is not available &amp; /dev/kvm does not exist</em>.</td>
+<td><em>not available</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- Chargeons le module du noyau kvm_amd</em>.</td>
+<td><em>/lib/modules/</em></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-bash"># Chargeons le module du noyau kvm_amd.
+sudo modprobe kvm_amd
+</code></pre>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter les liens suivants: <a href="https://www.kernel.org/">The Linux Kernel Archives</a>, <a href="https://github.com/arkane-systems/genie">Genie</a>, <a href="https://www.redhat.com/fr/topics/virtualization/what-is-KVM">KVM, qu'est-ce que c'est ?</a>, <a href="https://github.com/microsoft/WSL2-Linux-Kernel/">Microsoft - WSL2-Linux-Kernel</a>, <a href="https://doc.ubuntu-fr.org/tutoriel/console_commandes_de_base">Documentation Ubuntu Linux</a>, <a href="https://www.redhat.com/en/topics/linux/ARM-vs-x86">ARM vs x86: What's the difference?</a>, <a href="https://unix.stackexchange.com/questions/224887/how-to-script-make-menuconfig-to-automate-linux-kernel-build-configuration">How to script make menuconfig to automate Linux kernel</a>,
+<a href="https://www.gnu.org/software/make/">GNU Make</a>, <a href="https://cilium.io/blog/2020/11/10/ebpf-future-of-networking/">eBPF - The Future of Networking &amp; Security</a>.</li>
+</ul>
+<h2 id="mots-techniques">Mots techniques</h2>
+<p><code>Virtualisation, KVM (Kernel-based Virtual Machine), Noyau (kernel) Microsoft, GitHub WSL2-Linux-Kernel, Git, Ubuntu, WSL 2 (Windows Subsystem for Linux 2), Configuration du noyau, Dépendances, apt (Advanced Package Tool), Compilation, BTF (BPF Type Format), bc (calculatrice binaire), Windows, Nested virtualization, modprobe, CPU-checker, systemd, Architecture x86.</code></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-kvm-qemu.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

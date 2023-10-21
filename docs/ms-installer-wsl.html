@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Install WSL | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Install WSL | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-wsl.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="windows-subsystem-for-linux-2">Windows Subsystem for Linux 2</h1>
+
+<p>La configuration d'un environnement de test avec EVE-NG, KVM/QEMU et WSL 2 sur un hôte Windows 11 peut sembler complexe, mais avec des étapes spécifiques, elle peut être réalisée avec succès.</p>
+<h4 id="objectif-1--installer-wsl-2-sur-windows"><code>Objectif 1 : Installer WSL 2 sur Windows</code></h4>
+<p>Cet objectif se concentre sur l'installation de WSL 2 sur notre système Windows, une étape essentielle pour créer cet environnement de test.</p>
+<h2 id="étapes-dinstallation">Étapes d'Installation</h2>
+<p>Ci-dessous, nous présentons un aperçu des étapes d'installation ainsi que des problèmes potentiels que vous pourriez rencontrer :</p>
+<h4 id="1-installation-de-wsl"><code>1. Installation de WSL</code></h4>
+<p>Pour exécuter WSL 2, nous devons utiliser Windows 10 version 1903 ou ultérieure, avec la version 18362 ou ultérieure du système d'exploitation.</p>
+<pre><code class="lang-powershell"># Vérification de la version Windows requise
+Key + R puis tapez winver
+</code></pre>
+<p>Si vous utilisez une version antérieure, veuillez accéder à Windows Update sur votre ordinateur et installer toutes les mises à jour en attente.</p>
+<pre><code class="lang-powershell"># Ouvrez PowerShell en tant qu'administrateur, puis entrez cette commande
+Wsl.exe --install
+</code></pre>
+<pre><code class="lang-powershell"># Définir la version 2 de WSL comme version par défaut
+wsl --set-default-version 2
+</code></pre>
+<h4 id="2-utilisation-de-wslconfig"><code>2. Utilisation de .wslconfig</code></h4>
+<p>Dans ce projet, nous travaillons avec WSL 2, donc nous n'avons pas besoin de &quot;wsl.conf&quot; (qui correspond à la version 1 de WSL). Nous allons directement configurer le fichier &quot;.wslconfig&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vous pouvez le trouver dans: (<code>&quot;C:\\Users\\nom_user\\.wslconfig&quot;</code>).</p>
+</div>
+<p>Voici la configuration que nous ajoutons à ce fichier :</p>
+<pre><code class="lang-ini">[wsl2]
+# Active la récupération automatique de mémoire
+autoMemoryReclaim=enable
+# Définit la quantité de mémoire allouée (12 Go)
+memory=12GB
+# Définit le nombre de processeurs virtuels (6)
+processors=6
+# Définit la taille de la mémoire de swap (4 Go)
+swap=4GB
+# Définit le chemin du fichier de mémoire de swap
+swapfile=C:\\wslswap.vhdx
+# Autorise la redirection locale (localhost forwarding)
+localhostForwarding=true
+# Active la virtualisation imbriquée (nested virtualization)
+nestedVirtualization=true
+</code></pre>
+<h4 id="3-contrôle-de-wsl"><code>3. Contrôle de WSL</code></h4>
+<p>Pour gérer WSL, nous pouvons utiliser diverses commandes. Voici quelques exemples :</p>
+<pre><code class="lang-powershell"># Pour obtenir de l'aide sur WSL :
+wsl --help
+# Pour obtenir la liste des distributions en cours d'exécution
+wsl --list
+# Pour obtenir la liste des distributions en cours d'exécution :
+wsl --list --running
+# Pour obtenir une liste détaillée des distributions WSL : 
+wsl --list –verbose
+# Pour exécuter des commandes Linux avec la commande wsl
+wsl ls ~
+wsl cat /etc/issue
+wsl -d Ubuntu-20.04 cat /etc/issue
+wsl whoami
+# Pour arrêter une distribution WSL spécifique : 
+wsl --terminate Ubuntu-20.04
+# Pour arrêter toutes les distributions WSL en cours d'exécution :
+wsl --shutdown
+</code></pre>
+<h2 id="problèmes-potentiels-et-solutions">Problèmes Potentiels et Solutions</h2>
+<p>Lors de la configuration de WSL 2, nous pourrions rencontrer certains problèmes, mais voici les solutions proposées :</p>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Description</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Problème</em></td>
+<td><em>- Utilisation excessive de la mémoire</em>.</td>
+<td><em>VmmemWSL</em></td>
+</tr>
+<tr>
+<td><em>Solution</em></td>
+<td><em>- autoMemoryReclaim=<code>enable</code> et memory=<code>12GB</code></em>.</td>
+<td><em>.wslconfig</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires</h2>
+<ul>
+<li>Pour plus de détails, vous pouvez consulter le lien suivant sur <em>Learn Microsoft</em> : <a href="https://learn.microsoft.com/en-us/windows/wsl/install#requirements">How to install Linux on Windows with WSL</a>.</li>
+</ul>
+<h2 id="mots-techniques">Mots techniques</h2>
+<p><code>Microsoft, WSL 2, wsl.conf, .wslconfig, Récupération automatique de mémoire (libérer), Mémoire de swap, localhost forwarding (port), nested virtualization, Windows 11, Ubuntu-20.04, PowerShell, Windows Update.</code></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/docs/ms-installer-wsl.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
