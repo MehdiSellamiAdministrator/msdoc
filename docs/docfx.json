@@ -37,6 +37,7 @@
     "globalMetadata": {
       "_appTitle": "msDocs",
       "_appName": "msdocs",
+      "_appLogoPath": "images/mslogo.svg",
       "_appFooter": "<span>Soutenu par le <a href=\"https://onetech-group.com\">Onetech Group</a>. Réalisé par <a href=\"https://github.com/MehdiSellamiAdministrator\">Mehdi Sellami</a></span>" 
     },
     "markdownEngineProperties": {
