@@ -25,30 +25,7 @@ jobs:
 
     - run: dotnet tool update -g docfx
     - run: docfx docs/docfx.json
-
-    # Create the gh-pages branch
-    - name: Create gh-pages branch
-      run: |
-        git checkout --orphan gh-pages
-        git reset --hard
-        git commit --allow-empty -m "Initial commit to gh-pages"
-        git branch -M gh-pages
-        git push -u origin gh-pages
-
-    # Copy the contents of the "site" folder to the gh-pages branch
-    - name: Copy site folder to gh-pages
-      run: |
-        git checkout master -- _site/
-        git add site/
-        git commit -m "Update site folder in gh-pages"
-        git push origin gh-pages
-
-    # Clean up the workspace
-    - name: Clean up
-      run: |
-        git checkout master
-        git branch -D gh-pages
-        
+    
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
