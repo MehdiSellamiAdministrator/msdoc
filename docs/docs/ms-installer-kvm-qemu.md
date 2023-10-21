@@ -67,22 +67,22 @@ make menuconfig
 
 8. Après un peu de compilation, nous accéderons au menu de `config du noyau Linux`.
 
-![Configuring the kernel using menuconfig](../images/menuconfig.png)
+![Configuring the kernel using menuconfig](../images/menuconfig.jpg)
 
 
 9. Accédons à `Processor type and features`, puis `Linux guest support`, et activons `KVM Guest support`. 
 
-![Enabled KVM Guest support](../images/enable-kvm.png)
+![Enabled KVM Guest support](../images/enablekvm.jpg)
 
 10. Ensuite, utilisons les touches fléchées gauche et droite pour sélectionner `Exit` et appuyons deux fois sur Entrée pour revenir au niveau supérieur du répertoire de configuration.
 
 11. Utilisons la touche Entrée pour accéder au répertoire `Virtualisation`. Ici, utilisons la barre d'espace ou la touche `Y` pour le marquer avec un astérisque (*) pour activer le `Kernel-based Virtual Machine (KVM) support`. Activons également `KVM for AMD processors support` en tant que module avec la touche `M`.
 
-![Enabling Kernel-based Virtual Machine](../images/module.png)
+![Enabling Kernel-based Virtual Machine](../images/module.jpg)
 
 12. Sélectionnons "Exit" deux fois et nous serons invités à enregistrer notre nouvelle configuration. Sélectionnons `Yes`.
 
-![Prompt to save your new Kernel configuration](../images/yes.png)
+![Prompt to save your new Kernel configuration](../images/yes.jpg)
 
 13. Ensuite, nous construisons notre noyau en utilisant la commande `make`.
 
@@ -105,7 +105,7 @@ sudo apt install dwarves
 ```bash
 make -j 8
 ```
-![Prompt to save your new Kernel configuration](../images/ms-is-ready.png)
+![Prompt to save your new Kernel configuration](../images/msisready.jpg)
 
 Ah, les plaisirs de l'observation de la construction du noyau Linux !
 
@@ -133,7 +133,7 @@ cp arch/x86/boot/bzImage $(wslpath $(wslvar USERPROFILE))
 kernel=C:\\Users\\sella\\bzImage
 nestedVirtualization=true
 ```
-![Configuring .wslconfig to use our custom Linux kernel](../images/bzimages.png)
+![Configuring .wslconfig to use our custom Linux kernel](../images/bzimages.jpg)
 
 19. Créons un fichier appelé `kvm-ms` pour définir les options de notre module "KVM for AMD processors support", appelé `kvm-amd` :
 
@@ -163,7 +163,7 @@ wsl.exe --shutdown # Powershell
 ```bash
 uname -ar
 ```
-![Confirmer que nous exécutons notre noyau personnalisé](../images/ms-newkernel.png)
+![Confirmer que nous exécutons notre noyau personnalisé](../images/msnewkernel.jpg)
 
 23. Installons un outil appelé `kvm-ok` pour confirmer la disponibilité de la fonctionnalité `KVM nested` :
 
@@ -173,7 +173,7 @@ sudo apt -y install cpu-checker
 kvm-ok
 # Le module générera un message indiquant que "/dev/kvm existe."
 ```
-![le module génère un message /dev/kvm existe](../images/kvm-ok.png)
+![le module génère un message /dev/kvm existe](../images/kvmok.jpg)
 
 > [!NOTE]
 > Si nous recevons le message `KVM acceleration can be used`, nous avons chargé avec succès le module du noyau > et KVM fonctionne désormais. Félicitations !

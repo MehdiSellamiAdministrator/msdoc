@@ -15,7 +15,7 @@ Nous devons d'abord nous assurer que la `virtualisation` matérielle est activé
 
 Rendons-nous sur le site officiel de [VMware](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html) pour télécharger la dernière version de VMware Workstation Pro compatible avec Windows 11.
 
-![vmware-down](../images/vmware-down.png)
+![vmware-down](../images/vmwaredown.jpg)
 
 ## `Exécution le programme`
 
@@ -30,7 +30,7 @@ Une fois le téléchargement terminé, exécutons le programme d'installation de
 
 Une fois que nous avons choisi les options d'installation, suivons le processus d'installation pour que VMware Workstation soit `installé` sur notre système.
 
-![vmware-down](../images/install-vmware.gif)
+![vmware-down](../images/installvmware.gif)
 
 > [!NOTE] 
 > Voici une `clé de licence` complète pour VMware Workstation Pro : `4A4RR-813DK-M81A9-4U35H-06KND`
@@ -41,7 +41,7 @@ Une fois que la clé de licence est acceptée, nous devrions avoir un accès com
 
 Après l'installation, lançons `VMware Workstation`. Nous serons prêts à créer et gérer des machines virtuelles sur Windows 11.
 
-![vmware-down](../images/lancer-vmware.png)
+![vmware-down](../images/lancervmware.jpg)
 
 > [!NOTE]
 > Assurez-vous également que votre système Windows 11 répond aux `exigences minimales` de VMware Workstation pour garantir un fonctionnement optimal des machines virtuelles.

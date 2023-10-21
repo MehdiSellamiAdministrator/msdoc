@@ -2,13 +2,13 @@
 
 Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-WAN` et d'autres images sur EVE-NG en utilisant `SSH (Secure Shell)` et `SCP (Secure Copy Protocol)` pour transférer les fichiers vers notre instance EVE-NG.
 
-![Alt text](../images/images-cisco-backup.png)
+![Alt text](../images/imagesciscobackup.jpg)
 
 ## Créer les fichiers
 
 - Nous allons d’abord nous connecter à `EVE-NG via SSH`, puis créer des fichiers dans EVE-NG. 
 
-![Alt text](../images/add-img-cisco-eve.png)
+![Alt text](../images/addimgciscoeve.jpg)
 
 - Voici les `commandes` de création de dossiers dont nous aurons besoin, comme indiqué :
 
@@ -16,7 +16,7 @@ Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-W
 cd /opt/unetlab/addons/qemu
 mkdir vtedge-20.4.1 vtbond-20.4.1 vtsmart-20.4.1 vtmgmt-20.4.1 csr1000vng-universalk9.17.03.01a-serial viosl2-adventerprisek9-m.ssa.high_iron_20200929 asav-9.17-1-7
 ```
-![Alt text](../images/dir-eve.png)
+![Alt text](../images/direve.jpg)
 
 - Ensuite, à l'aide de la commande `scp` (Linux ou Windows), nous copions les fichiers (qcow) comme dans le tableau :
 
@@ -58,7 +58,7 @@ scp -r viptela-vmanage-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unet
 > [!NOTE]
 > `vBond` et `vEdge` partagent la même image (viptela-`edge`-20.4.1-genericx86-64.qcow2).
 
-![Alt text](../images/add-img.png)
+![Alt text](../images/addimg.jpg)
 
 - Maintenant, en utilisant `SSH` à distance sur l'instance `EVE-NG`, créons un `deuxième stockage` supplémentaire de disque dur de `100 Go` appelé "**virtiob.qcow2**" et corrigeons `les autorisations` :
 
@@ -69,7 +69,7 @@ scp -r viptela-vmanage-20.4.1-genericx86-64.qcow2 root@192.168.100.128:/opt/unet
 
 C'est fait ! Nous avons ajouté et préparé les images Cisco sur notre EVE-NG.
 
-![Alt text](../images/dash-eve.png)
+![Alt text](../images/dasheve.jpg)
 
 ## Ressources supplémentaires
 

@@ -19,7 +19,7 @@ EVE-NG
 wsl --list
 ```
 
-![Export-image-ubuntu](../images/wsl-export.png)
+![Export-image-ubuntu](../images/wslexport.jpg)
 
 3. Tapons la commande suivante pour créer une `sauvegarde de la distribution WSL` et appuyez sur Entrée :
 
@@ -28,11 +28,11 @@ wsl --list
 wsl.exe --export Ubuntu-22.04 C:\WSL\ubuntu-onetech-backup.tar.gz
 ```
 
-![Export-image-ubuntu](../images/export-ubuntu-onetech.png)
+![Export-image-ubuntu](../images/exportubuntuonetech.jpg)
 
 Veuillons noter qu'il n'y a pas de barre de progression pour suivre l'avancement. pour moi cette processus avec presque 18 GO reste 3 minute.
 
-![Export-image-ubuntu](../images/backup-finish.png)
+![Export-image-ubuntu](../images/backupfinish.jpg)
 
 > [!NOTE] 
 > Pour utiliser cette distribution, n'oubliez pas d'ajouter notre propre `noyau` pour l'ajouter et également d'installer le module pour `Kvm_amd ou Kvm_intel` ; C'est aussi simple que d'utiliser quelques commandes et de changer le mot `amd` en `intel` ; Du côté du noyau, j'ai ajouté `AMD et Intel` ; Voir cet article [].
@@ -43,7 +43,7 @@ L'importation d'une image s'effectue de la manière suivante :
 
 1. Ajouter notre propre noyau (Kernel) dans ce chemin: `"C:\Users\\%USERNAME%\\bzImage"`.
 
-![Import-kernel-linux](../images/import-image.png)
+![Import-kernel-linux](../images/importimage.jpg)
 
 2. Créez un fichier `.wslconfig` dans le répertoire `"C:\\Users\\%USERNAME%\\.wslconfig"` contenant la configuration suivante :
 

@@ -11,7 +11,7 @@ sudo apt update
 sudo apt install openssh-server
 ```
 
-![Alt text](../images/ssh-ubuntu.png)
+![Alt text](../images/sshubuntu.jpg)
 
 2. Nous pouvons gérer le service SSH en utilisant ces commandes :
 

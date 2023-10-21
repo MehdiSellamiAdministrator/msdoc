@@ -16,7 +16,7 @@ Téléchargez la dernière version de la communauté gratuite d'EVE-NG (Version 
 
 - Placez le fichier `EVE-CE-0.vmdk` dans un répertoire de votre choix.
 
-![Free EVE Community Edition Version 5.0.1-19](../images/vmdk.png)
+![Free EVE Community Edition Version 5.0.1-19](../images/vmdk.jpg)
 
 - Utilisez la commande `qemu-img` pour convertir le fichier d'image au format `.vmdk` en `.qcow2` :
 
@@ -40,13 +40,13 @@ virt-manager
 
 - Dans `Virt-Manager`, ajoutez l'image `EVEms.qcow2` en suivant ces étapes :
 
-![Free EVE Community Edition Version 5.0.1-19](../images/ms-eve.gif)
+![Free EVE Community Edition Version 5.0.1-19](../images/mseve.gif)
 
 *`Étape 4`* : Configuration finale d'EVE-NG
 
 Lorsque vous exécutez EVE-NG pour la première fois, suivez les étapes à l'écran, qui incluent une fenêtre bleue où nous devrons appuyer sur "OK" à chaque fois. Les étapes d'installation et de configuration spécifiques peuvent varier en fonction de la version d'EVE-NG que vous avez téléchargée.
 
-![Free EVE Community Edition Version 5.0.1-19](../images/ms-eve-root.gif)
+![Free EVE Community Edition Version 5.0.1-19](../images/mseveroot.gif)
 
 *`Étape 5`* : Mises à jour du système
 
@@ -78,7 +78,7 @@ Pour Windows : [Windows Client Side](https://www.eve-ng.net/index.php/download/#
 
 [Packages in “eve-ng-integration”](https://launchpad.net/~smartfinn/+archive/ubuntu/eve-ng-integration/+packages)
 
-![Linux Client Side](../images/linux-client-side-new.png)
+![Linux Client Side](../images/linuxclientsidenew.jpg)
 
 - Alternativement, vous pouvez installer `eve-ng-integration` depuis le terminal à l'aide de la commande suivante :
 
@@ -92,7 +92,7 @@ sudo apt-get install eve-ng-integration
 > [!WARNING]
 > La configuration de `wireshark-common` offre la possibilité d'installer `Dumpcap` de manière à permettre aux membres du groupe système "wireshark" de `capturer des paquets`. La question posée est : *"Les utilisateurs non superutilisateurs devraient-ils être autorisés à capturer des paquets ?"*.
 
-![Linux Client Side](../images/wireshark.png)
+![Linux Client Side](../images/wireshark.jpg)
 
 Si vous utilisez une distribution de type `Debian`, nous pouvons exécuter la commande suivante et choisir la réponse `Oui` (si on veut):
 
