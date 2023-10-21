@@ -16,7 +16,7 @@ Une fois les fichiers téléchargés, nous allons ajouter les images Cisco `SD-W
 cd /opt/unetlab/addons/qemu
 mkdir vtedge-20.4.1 vtbond-20.4.1 vtsmart-20.4.1 vtmgmt-20.4.1 csr1000vng-universalk9.17.03.01a-serial viosl2-adventerprisek9-m.ssa.high_iron_20200929 asav-9.17-1-7
 ```
-![Alt text](./../images/dir-eve.png)
+![Alt text](/dir-eve.png)
 
 - Ensuite, à l'aide de la commande `scp` (Linux ou Windows), nous copions les fichiers (qcow) comme dans le tableau :
 
