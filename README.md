@@ -1,7 +1,7 @@
 # Projet PFE - mehdi sellami
 
-[![Cisco](https://img.shields.io/badge/build-passing-brightgreen)(https://www.cisco.com/)]
-[![OneTech](https://img.shields.io/badge/build-passing-brightgreen)(https://onetech-group.com/)]
+[![Cisco](https://img.shields.io/badge/build-passing-brightgreen)]
+[![OneTech](https://img.shields.io/badge/build-passing-brightgreen)]
 
 * [Getting Started](#getting-started)
 * [Contributing](#contributing)
