@@ -53,6 +53,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./site  # Set the path to your specific folder
+        publish_dir: docs/_site  # Set the path to your specific folder
 
   
