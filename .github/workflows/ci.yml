@@ -11,6 +11,11 @@ jobs:
     permissions:
       contents: write
     steps:
+    - name: Configure Git
+      run: |
+        git config --global user.email sellamimehdi87@gmail.com
+        git config --global user.name "Mehdi Sellami Administrator"
+    
     - name: Checkout
       uses: actions/checkout@v4
     - name: Dotnet Setup
