@@ -800,10 +800,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/license-smart.png",
+      "source_relative_path": "images/licensesmart.jpg",
       "output": {
         "resource": {
-          "relative_path": "images/license-smart.png"
+          "relative_path": "images/licensesmart.jpg"
         }
       },
       "version": ""
@@ -1520,10 +1520,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/vs.png",
+      "source_relative_path": "images/vs.jpg",
       "output": {
         "resource": {
-          "relative_path": "images/vs.png"
+          "relative_path": "images/vs.jpg"
         }
       },
       "version": ""
