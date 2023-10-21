@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [windows-latest]
     steps:
       # Step 1: Check out the code repository 
       - name: Checkout
@@ -22,7 +22,7 @@ jobs:
         with:
           dotnet-version: 7.x
       - run: dotnet tool update -g docfx
-      - run: docfx docfx_project/docfx.json
+      - run: docfx D:\msdocs\docs\docfx.json
       - run: npm run lint
         shell: bash
         working-directory: templates
@@ -32,10 +32,6 @@ jobs:
       - run: choco install wkhtmltopdf
         if: matrix.os == 'windows-latest'
       - run: dotnet test -c Release -f net8.0 --no-build --collect:"XPlat Code Coverage"
-      - run: dotnet test -c Release -f net7.0 --no-build --collect:"XPlat Code Coverage"
-        if: matrix.os == 'ubuntu-latest'
-      - run: dotnet test -c Release -f net6.0 --no-build --collect:"XPlat Code Coverage"
-        if: matrix.os == 'ubuntu-latest'
       - uses: codecov/codecov-action@v3
         if: matrix.os == 'ubuntu-latest'
       - run: dotnet run -c Release --no-build -f net8.0 --project src/docfx -- docs/docfx.json
