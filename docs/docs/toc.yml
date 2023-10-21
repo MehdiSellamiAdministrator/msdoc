@@ -1,2 +1,56 @@
-- name: Introduction
-  href: intro.md
+- name: Get started
+  items:
+    - name: Démarrage Rapide
+      href: ../index.md
+    - name: Démarrage du Projet
+      href: demarrage-initial.md
+    - name: Gestion du projet
+      href: Gestion-du-projet.md
+    - name: Tableau Kanban
+      href: tableau-kanban.md
+
+- name: Référence
+
+- name: Guide d'installation
+  items:
+    - name: UTILISATEURS WSL2
+    - name: Installer WSL 2
+      href: ms-installer-wsl.md
+    - name: Installer KVM
+      href: ms-installer-kvm-qemu.md
+    - name: Installer QEMU & Virt
+      href: ms-installer-qemu-virt.md
+    - name: Installer EVEng
+      href: ms-installer-eveng.md
+    - name: Installer OpenSSH
+      href: ms-install-openssh.md
+    
+    - name: UTILISATEURS VMWARE
+    - name: Installer VMWARE
+      href: ms-installer-vmware.md
+    - name: Installer EVEng
+      href: ms-eveng-vmware.md
+    - name: Installer VS Code
+      href: ms-install-vscode.md
+    
+    
+- name: Gestion des images Cisco
+  items:
+    - name: Images SD-WAN (Cisco)
+      href: ms-cisco-images.md
+    - name: Télécharger Cisco Images
+      href: ms-sd-wan-software.md
+    - name: Ajouter Cisco Images
+      href: ms-ajoute-img-cisco.md
+
+- name: Gestion des Sauvegardes
+  items:
+    - name: Backup/Import Distribution
+      href: ms_export-backup.md
+
+- name: Guide de Testeur
+  items:
+    - name: Test de Liaison Réseau
+      href: test-connecter-reseau.md
+    
+- name: NetDevSecOps
