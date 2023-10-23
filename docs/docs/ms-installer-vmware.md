@@ -1,4 +1,4 @@
-# Installation de VMware sur Windows 11
+# Installation de VMware sur Windows
 
 Pour installer `VMware` sur Windows 11, voici les étapes que nous devons suivre :
 
