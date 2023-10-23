@@ -25,9 +25,9 @@ Couche | Fonction
 *`Distribution`* | *Connectivité basée sur des politiques.*
 *`Accès`* | *Accès des groupes de travail (workgroup) et des utilisateurs au réseau (Endpoint).*
 
-## Les fonctions des couches hiérarchiques
+## Fonctions des couches hiérarchiques
 
-La couche Core est cruciale pour les communications d'entreprise :
+Les fonctions des couches hiérarchiques dans la conception de réseaux sont essentielles pour organiser, gérer et optimiser les performances des réseaux informatiques. 
 
 ## `Caractéristiques: "Backbone"`
 
