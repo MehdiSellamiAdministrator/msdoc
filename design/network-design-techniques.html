@@ -85,7 +85,7 @@
         <article data-uid="">
 <h1 id="techniques-de-conception">Techniques de conception</h1>
 
-<p>La conception d'un réseau peut être sujette à des erreurs et à des problèmes de mauvaise conception. Il est crucial d'éviter ces pièges pour maintenir un réseau fiable et performant. Cette section met en lumière certaines des techniques de conception de réseau les plus courantes, que tout concepteur de réseau doit maîtriser pour prévenir les erreurs de conception et corriger celles qui ont été introduites par d'autres.</p>
+<p>La conception d'un réseau peut être sujette à des <code>erreurs et à des problèmes</code> de mauvaise conception. Il est crucial d'éviter ces pièges pour maintenir un réseau fiable et performant. Cette section met en lumière certaines des techniques de conception de réseau les plus courantes, que tout concepteur de réseau doit maîtriser pour prévenir les erreurs de conception et corriger celles qui ont été introduites par d'autres.</p>
 <pre><code class="lang-mermaid">flowchart LR
 
 A{Failure Isolation} --&gt; B{Shared Failure State}
@@ -102,24 +102,24 @@ D --&gt; E{Putting It All Together}
 </thead>
 <tbody>
 <tr>
-<td><em>Isolation des défaillances (Failure Isolation)</em></td>
-<td><em>Cette technique consiste à concevoir des mécanismes pour prévenir la propagation des défaillances au sein du réseau, évitant ainsi des pannes généralisées; Créer des limites (boundaries) au sein du réseau</em></td>
+<td><em><code>Isolation des défaillances</code> (Failure Isolation)</em></td>
+<td><em>Cette technique consiste à concevoir des mécanismes pour prévenir <code>la propagation</code> des défaillances au sein du réseau, évitant ainsi des pannes généralisées; Créer des <code>limites</code> (boundaries) au sein du réseau</em></td>
 </tr>
 <tr>
-<td><em>État de défaillance partagé (Shared Failure State ou aka fate sharing)</em></td>
-<td><em>Identifiez et gérez les points potentiels de défaillance qui pourraient être partagés par plusieurs composants du réseau; Il est essentiel de concevoir des mécanismes de redondance ou de mitigation pour éviter ou minimiser les effets de l'état de défaillance partagé</em></td>
+<td><em><code>État de défaillance partagé</code> (Shared Failure State ou aka fate sharing)</em></td>
+<td><em>Identifiez et gérez les points potentiels de défaillance qui pourraient être partagés par plusieurs composants du réseau; Il est essentiel de concevoir des mécanismes de <code>redondance</code> ou de <code>mitigation</code> pour éviter ou minimiser les effets de l'état de défaillance partagé</em></td>
 </tr>
 <tr>
-<td><em>Blocs de construction modulaires (Modularity Building Blocks)</em></td>
-<td><em>La &quot;modularité&quot; est un concept qui permet d'utiliser des blocs de construction spécialement conçus pour des objectifs particuliers; Utilisez des modules indépendants pour construire le réseau, facilitant ainsi la maintenance et l'évolutivité.</em></td>
+<td><em><code>Blocs de construction modulaires</code> (Modularity Building Blocks)</em></td>
+<td><em>La &quot;<code>modularité</code>&quot; est un concept qui permet d'utiliser <code>des blocs de construction</code> spécialement conçus pour des objectifs <code>particuliers</code>; Utilisez des modules <code>indépendants</code> pour construire le réseau, facilitant ainsi la maintenance et l'évolutivité.</em></td>
 </tr>
 <tr>
-<td><em>Hiérarchie de conception (Hierarchy of Design)</em></td>
-<td><em>Organisez le réseau en couches pour une gestion plus efficace, permettant une meilleure structuration des éléments du réseau; Les couches les plus couramment utilisées dans l'architecture hiérarchique d'un réseau sont les suivantes : Couche Core (Noyau), Couche Distribution (Distribution), Couche Aggregation (Agrégation), Couche Access (Accès)</em></td>
+<td><em><code>Hiérarchie de conception</code> (Hierarchy of Design)</em></td>
+<td><em>Organisez le réseau en couches pour une gestion plus efficace, permettant une meilleure structuration des éléments du réseau; Les couches les plus couramment utilisées dans l'architecture hiérarchique d'un réseau sont les suivantes : Couche <code>Core</code> (Noyau), Couche <code>Distribution</code> (Distribution), Couche <code>Aggregation</code> (Agrégation), Couche <code>Access</code> (Accès)</em></td>
 </tr>
 <tr>
-<td><em>Assemblage (Putting It All Together)</em></td>
-<td><em>Intégrez tous les éléments de conception pour créer un réseau opérationnel et fonctionnel.</em></td>
+<td><em><code>Assemblage</code> (Putting It All Together)</em></td>
+<td><em><code>Intégrez tous les éléments</code> de conception pour créer un réseau opérationnel et fonctionnel.</em></td>
 </tr>
 </tbody>
 </table>

@@ -77,6 +77,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "design/network-design-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/network-design-summary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "design/network-design-techniques.md",
       "output": {
         ".html": {
