@@ -106,6 +106,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "design/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "design/toc.html"
+        },
+        ".json": {
+          "relative_path": "design/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/demarrage-initial.md",
       "output": {
