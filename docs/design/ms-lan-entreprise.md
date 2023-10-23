@@ -25,8 +25,6 @@ Les avantages de la conception hiérarchique incluent des économies de coûts, 
 
 Couche | Fonction
 -----            | ----                   
-*`Noyau (Core)`* | *Transport rapide (fast transport) entre les switches de distribution.* 
+*`Noyau (Core)`* | *Transport rapide (fast transport) entre les switches de distribution (To Enterprise Edge Modules).* 
 *`Distribution`* | *Connectivité basée sur des politiques.*
 *`Accès`* | *Accès des groupes de travail (workgroup) et des utilisateurs au réseau - Endpoint.*
-
-![Hierarchical Network Design](../images/threelayers.jpg)
