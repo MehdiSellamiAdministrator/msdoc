@@ -47,3 +47,39 @@ Caractéristique | Description
 
 > [!WARNING]
 > Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.
+
+##### `Caractéristiques de la Couche "Distribution"`
+
+La couche de distribution d'un réseau constitue un point d'isolation entre les couches d'accès et de core. Cette couche a divers rôles et fonctions, dont notamment :
+
+Rôles et Fonctions | Explications
+-----            | ----                   
+*`Connectivité basée sur des politiques`* | *Par exemple, l'acheminement du trafic d'un réseau particulier par une interface spécifique tandis que tout autre trafic passe par une autre interface.* 
+*`Redondance et load balancing`* | *Elle assure la redondance pour garantir la disponibilité du réseau en cas de défaillance. De plus, elle équilibre la charge entre les différents composants du réseau pour une meilleure utilisation des ressources.*
+*`Agrégation des armoires de câblage des réseaux locaux (LAN)`* | *agrège les connexions de plusieurs armoires de câblage locales, ce qui simplifie la gestion du réseau en centralisant les connexions.*
+*`Agrégation des connexions de réseaux étendus (WAN)`* | *Elle agrège les connexions provenant de différents réseaux étendus, ce qui peut réduire le nombre de connexions WAN nécessaires et améliorer l'efficacité de la communication entre les sites distants.*
+*`Qualité de service (QoS)`* | *Elle gère la qualité de service en attribuant des priorités et en appliquant des politiques de qualité de service pour assurer que les types de trafic critiques bénéficient de performances optimales.* 
+*`Filtrage de sécurité`* | *La couche de distribution filtre le trafic pour des raisons de sécurité, en s'assurant que seuls les flux de données autorisés sont autorisés à traverser.*
+*`Agrégation ou résumé (summarization) d'adresses ou de zones`* | *Elle agrège ou résume des plages d'adresses IP ou des zones pour réduire la complexité du routage et économiser de la bande passante.*
+*`Accès aux départements ou groupes de travail`* | *Elle gère l'accès aux différents départements ou groupes de travail au sein de l'entreprise, contrôlant qui peut accéder à quelles ressources.*
+*`Définition de domaines de diffusion ou de multidiffusion`* | *Elle définit les limites des domaines de diffusion ou de multidiffusion pour contrôler la portée des diffusions de données.*
+*`Routage entre les réseaux locaux virtuels (VLAN)`* | *La couche de distribution permet le routage entre différents réseaux locaux virtuels (VLAN), ce qui isole le trafic entre les différents groupes d'utilisateurs.*
+*`Traductions de média`* | *Elle peut effectuer des traductions de média pour permettre la communication entre différents types de médias, tels qu'Ethernet et Token Ring.*
+*`Redistribution entre des domaines de routage`* | *Elle permet la redistribution du trafic entre différents domaines de routage, par exemple, entre deux protocoles de routage distincts.* 
+*`Distinguer les protocoles de routage statiques et dynamiques`* | *Elle peut servir de point de démarcation entre des protocoles de routage statiques (configurés manuellement) et dynamiques (configurés automatiquement).*
+
+Nous pouvons utiliser plusieurs fonctionnalités du `logiciel Cisco IOS` pour mettre en oeuvre une stratégie au niveau de la couche de distribution :
+
+Rôles et Fonctions | Explications
+-----            | ----                   
+*`Filtrage par adresse source ou de destination`* | *Contrôle du trafic en fonction des adresses source ou de destination.* 
+*`Filtrage sur les ports d'entrée ou de sortie`* | *Filtrage du trafic en fonction des ports d'entrée ou de sortie des dispositifs.*
+*`Masquage des numéros de réseau internes`* | *Dissimulation des numéros de réseau internes grâce au filtrage des routes.*
+*`Filtrage par adresse source ou de destination`* | *Contrôle du trafic en fonction des adresses source ou de destination.* 
+*`Routage statique`* | *Configuration manuelle des entrées de routage pour des besoins spécifiques*
+*`Mécanismes de qualité de service`* | *Priorisation et gestion du trafic pour un traitement préférentiel des données critiques.*
+
+> [!NOTE]
+> La couche de distribution joue également un rôle essentiel dans l'agrégation des routes en résumant les routes avant de les transmettre à la couche core. 
+
+La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche de cœur. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.
