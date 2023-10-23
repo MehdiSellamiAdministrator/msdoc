@@ -19,5 +19,5 @@
 
 - name: Architectures d'entreprise
   items:
-    - name: Enterprise LAN
+    - name: Modèles Hiérarchiques
       href: ms-lan-entreprise.md
