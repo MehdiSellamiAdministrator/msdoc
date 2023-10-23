@@ -2,7 +2,5 @@
   href: docs/
 - name: Conception
   href: design/
-- name: _Mission_2
-  href: tutorial/
-- name: _Mission_3
-  href: tutorial/
+- name: SDN
+  href: sdn/
