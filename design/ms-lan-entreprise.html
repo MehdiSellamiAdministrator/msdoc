@@ -85,11 +85,11 @@
         <article data-uid="">
 <h1 id="modèles-hiérarchiques">Modèles hiérarchiques</h1>
 
-<p>La conception hiérarchique des réseaux est un cadre structurel qui divise un réseau en plusieurs couches distinctes, chacune ayant un ensemble spécifique de fonctions.</p>
-<p>Cette approche simplifie la conception, la gestion et la croissance des réseaux. En termes simples, elle consiste à répartir les tâches réseau entre différentes couches de manière organisée, plutôt que de tenter de tout gérer au sein d'une seule plateforme ou d'un seul appareil complexe.</p>
+<p>La conception hiérarchique des réseaux est un cadre structurel qui divise un réseau en plusieurs couches distinctes, chacune ayant un ensemble spécifique de fonctions. Cette approche simplifie la conception, la gestion et la croissance des réseaux.</p>
+<p>En termes simples, elle consiste à répartir les tâches réseau entre différentes couches de manière organisée, plutôt que de tenter de tout gérer au sein d'une seule plateforme ou d'un seul appareil complexe.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Ces modèles sont applicables à la fois aux réseaux locaux (LAN) et aux réseaux étendus (WAN).</p>
+<p>Ces modèles sont applicables à la fois aux réseaux LAN et aux réseaux WAN.</p>
 </div>
 <h2 id="avantages-du-modèle-hiérarchique">Avantages du modèle hiérarchique</h2>
 <p>Les avantages de la conception hiérarchique incluent des économies de coûts, une facilité de compréhension, une croissance modulaire du réseau et une meilleure isolation des pannes.</p>
@@ -119,6 +119,34 @@
 </tr>
 </tbody>
 </table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Elle est également essentielle pour l'efficacité des protocoles de routage dynamiques tels qu'OSPF et EIGRP : Ils peuvent résumer les routes (route summarization), c'est-à-dire combiner plusieurs routes similaires en une seule, ce qui économise de la bande passante et simplifie le traitement de l'information de routage.</p>
+</div>
+<h2 id="conception-de-réseau-hiérarchique">Conception de Réseau Hiérarchique</h2>
+<table>
+<thead>
+<tr>
+<th>Couche</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>Noyau (Core)</code></em></td>
+<td><em>Transport rapide (fast transport) entre les switches de distribution.</em></td>
+</tr>
+<tr>
+<td><em><code>Distribution</code></em></td>
+<td><em>Connectivité basée sur des politiques.</em></td>
+</tr>
+<tr>
+<td><em><code>Accès</code></em></td>
+<td><em>Accès des groupes de travail (workgroup) et des utilisateurs au réseau - Endpoint.</em></td>
+</tr>
+</tbody>
+</table>
+<p><img src="../images/threelayers.jpg" alt="Hierarchical Network Design"></p>
 
 </article>
 
