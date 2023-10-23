@@ -1,6 +1,8 @@
 # Modèles hiérarchiques
 
-La conception hiérarchique des réseaux est un cadre structurel qui divise un réseau en plusieurs couches distinctes, chacune ayant un ensemble spécifique de fonctions. Cette approche simplifie la conception, la gestion et la croissance des réseaux. En termes simples, elle consiste à répartir les tâches réseau entre différentes couches de manière organisée, plutôt que de tenter de tout gérer au sein d'une seule plateforme ou d'un seul appareil complexe.
+La conception hiérarchique des réseaux est un cadre structurel qui divise un réseau en plusieurs couches distinctes, chacune ayant un ensemble spécifique de fonctions. 
+
+Cette approche simplifie la conception, la gestion et la croissance des réseaux. En termes simples, elle consiste à répartir les tâches réseau entre différentes couches de manière organisée, plutôt que de tenter de tout gérer au sein d'une seule plateforme ou d'un seul appareil complexe.
 
 > [!NOTE] 
 > Ces modèles sont applicables à la fois aux réseaux locaux (LAN) et aux réseaux étendus (WAN).
