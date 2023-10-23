@@ -1769,6 +1769,39 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "sdn/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdn/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sdn/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdn/toc.html"
+        },
+        ".json": {
+          "relative_path": "sdn/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdn/tut-sdn-concept.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdn/tut-sdn-concept.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -1777,39 +1810,6 @@
         },
         ".json": {
           "relative_path": "toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tutorial/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorial/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "tutorial/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "tutorial/toc.html"
-        },
-        ".json": {
-          "relative_path": "tutorial/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tutorial/tut-sdn-concept.md",
-      "output": {
-        ".html": {
-          "relative_path": "tutorial/tut-sdn-concept.html"
         }
       },
       "version": ""
