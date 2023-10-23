@@ -29,7 +29,7 @@ Couche | Fonction
 
 La couche Core est cruciale pour les communications d'entreprise :
 
-### Caractéristiques de la Couche "Backbone"
+##### `Caractéristiques de la Couche "Backbone"`
 
 Ces caractéristiques sont essentielles pour garantir le bon fonctionnement de cette couche :
 
