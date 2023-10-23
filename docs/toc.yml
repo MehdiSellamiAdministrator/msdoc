@@ -1,6 +1,6 @@
 - name: Guide d'utilisateur
   href: docs/
-- name: _Mission_1
+- name: Conception
   href: design/
 - name: _Mission_2
   href: tutorial/
