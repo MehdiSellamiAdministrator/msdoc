@@ -46,3 +46,6 @@ Caractéristique | Description
 
 > [!NOTE]
 > `Bonne pratique` : Maintenir un diamètre constant (nombre de sauts : From edge to edge, endpoint to endpoint ou endpoint to Serve à travers Core) est essentiel pour garantir la stabilité, des performances prévisibles, la facilité de gestion, et l'évolutivité tout en offrant une connectivité ininterrompue aux utilisateurs de l'entreprise.
+
+> [!WARNING]
+> Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.
