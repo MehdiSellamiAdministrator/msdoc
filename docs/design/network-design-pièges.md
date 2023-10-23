@@ -5,8 +5,9 @@ Les pièges de la conception réseau sont parmi les erreurs de conception résea
 ```mermaid
 flowchart LR
 
-A{Fondamentaux} --> B{Principes}
-B --> C{Techniques}
+A{Hypothèses} --> B{Surconception}
+B --> C{Best Practices}
+C --> D{Preconceived Notions}
 ```
 
 Éléments | Détails
