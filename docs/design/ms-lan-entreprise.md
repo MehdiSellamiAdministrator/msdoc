@@ -29,7 +29,7 @@ Couche | Fonction
 
 La couche Core est cruciale pour les communications d'entreprise :
 
-##### `Caractéristiques de la Couche "Backbone"`
+## `Caractéristiques de la Couche "Backbone"`
 
 Caractéristique | Description
 -----            | ----                   
@@ -48,7 +48,7 @@ Caractéristique | Description
 > [!WARNING]
 > Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.
 
-##### `Caractéristiques de la Couche "Distribution"`
+## `Caractéristiques de la Couche "Distribution"`
 
 La couche de distribution d'un réseau constitue un point d'isolation entre les couches d'accès et de core. Cette couche a divers rôles et fonctions, dont notamment :
 
@@ -82,13 +82,13 @@ Rôles et Fonctions | Explications
 > [!NOTE]
 > La couche de distribution joue également un rôle essentiel dans l'agrégation des routes en résumant les routes avant de les transmettre à la couche core. 
 
-La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche de cœur. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.
+La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche core. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.
 
-##### `Caractéristiques de la Couche "Access "`
+## `Caractéristiques de la Couche "Access"`
 
 Fonctionnalité | Description
 -----            | ----                   
-*`Commutation de couche 2`* | *Fournit une connectivité de couche 2 aux utilisateurs, permettant la communication au sein des segments locaux.* 
+*`Commutation (Switching) de couche 2`* | *Fournit une connectivité de couche 2 aux utilisateurs, permettant la communication au sein des segments locaux.* 
 *`Haute disponibilité`* | *Assure la disponibilité continue des services en cas de panne de dispositifs.*
 *`Sécurité des ports`* | *Protège les ports d'accès contre un accès non autorisé en limitant les adresses MAC autorisées.*
 *`Suppression de diffusion`* | *Réduit la diffusion excessive du trafic, ce qui améliore les performances du réseau.* 
@@ -101,3 +101,11 @@ Fonctionnalité | Description
 *`Alimentation par Ethernet (PoE) et VLAN auxiliaires pour la VoIP`* | *Fournit de l'alimentation aux périphériques VoIP et utilise des VLAN auxiliaires pour leur connectivité.*
 *`Contrôle d'accès au réseau (NAC)`* | *Gère l'accès au réseau en vérifiant la conformité des dispositifs et en les autorisant en conséquence.*
 *`VLAN auxiliaires`* | *Utilisés pour des fonctions spécifiques, tels que la connectivité des dispositifs de gestion réseau.*
+
+## Ressources supplémentaires
+
+- Pour plus de détails, vous pouvez consulter le lien suivant sur *Cisco Press* : [CCNP and CCIE Enterprise Core ENCOR 350-401 Official Cert Guide, 2nd Edition (Cisco Press, 2023)](https://www.ciscopress.com/store/ccnp-and-ccie-enterprise-core-encor-350-401-official-9780138216764)
+
+## Mots Techniques
+
+`Conception Hiérarchique des Réseaux, Réseaux LAN, Réseaux WAN, Noyau (Core), Distribution, Accès , Fiabilité, Redondance, load balancing, Bande Passante, Latence, Qualité de Service (QoS), Routage, Filtrage, Summarization, Switching, VLAN (Virtual Local Area Network), Boucle (Loop), Alimentation par Ethernet (PoE), Contrôle d'Accès au Réseau (NAC), Liste de Contrôle d'Accès (ACL)`
