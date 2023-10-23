@@ -23,8 +23,7 @@ Statuts | Definition
 
 ## Semaine 1
 #### `De Lundi 09/10/2023 à Vendredi 13/10/2023.`
-
-   
+  
 Jour     | Tâches à Faire  | Statut
 -----    | ----            | ----
 *Lundi* | *- Entretien avec l'encadreur au sein du OneTech Solution*. | *Terminé*
@@ -37,3 +36,28 @@ Jour     | Tâches à Faire  | Statut
 *Vendredi* | *- Documenter toutes les tâches terminées dans *le framework* de documentation.*. | *Terminé*
 *Vendredi* | *- Publier le framework de documentation sur les pages GitHub*. | *En cours*
 *Samedi* | *- Clôturer toutes les tâches @En cours pour cette semaine, à l'exception de celles liées à l'apprentissage.*. | *En cours*
+
+## Semaine 2
+#### `De Lundi 16/10/2023 à Vendredi 20/10/2023.`
+   
+Jour     | Tâches à Faire  | Statut
+-----    | ----            | ----
+*Lundi* | *- Créer un Compte Virtuel & télecharges des Images*. | *Terminé*
+*Lundi* | *- Corrigé les problémes des images sur KVM/Qemu/EVEng*. | *Terminé*
+*Mardi* | *- Installation de VMware sur Windows 11 & EVENG & VS Code*. | *Terminé*
+*Mardi* | *- Configuration de l'environnement de test (EVE-NG, Vipetela, Cisco IOS) sur Windows*. | *Terminé*
+*Mercredi* | *- Ajouter et tester Vmanage, Vbond, Vsmart, VEdge sur EVEng*. | *Terminé*
+*Jeudi* | *- Documenter toutes les tâches terminées dans *le framework* de documentation.*. | *Terminé*
+*Jeudi* | *- Publier le framework de documentation sur les pages GitHub*. | *Terminé*
+*Jeudi* | *- Publier le framework de documentation sur les pages GitHub*. | *Terminé*
+*Vendredi* | *- Publier le framework de documentation sur les pages GitHub*. | *Terminé*
+*Vendredi* | *- Backup notre environnement de test*. | *Terminé*
+*Samedi* | *- Clôturer toutes les tâches @En cours pour cette semaine, à l'exception de celles liées à l'apprentissage.*. | *Terminé*
+
+## Semaine 3
+#### `De Lundi 23/10/2023 à Vendredi 27/10/2023.`
+
+Jour     | Tâches à Faire  | Statut
+-----    | ----            | ----
+*Lundi* | *- (Mission_1) Etude théorique des différentes Architectures*. | *En cours*
+*Mardi* | *- Entretien avec l'encadreur au sein du OneTech Solution*. | *à Faire*

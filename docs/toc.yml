@@ -1,6 +1,8 @@
-- name: Docs
+- name: Guide d'utilisateur
   href: docs/
-- name: API
-  href: api/
-- name: tutorial
+- name: _Mission_1
+  href: design/
+- name: _Mission_2
+  href: tutorial/
+- name: _Mission_3
   href: tutorial/
