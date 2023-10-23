@@ -31,8 +31,6 @@ La couche Core est cruciale pour les communications d'entreprise :
 
 ##### `Caractéristiques de la Couche "Backbone"`
 
-Ces caractéristiques sont essentielles pour garantir le bon fonctionnement de cette couche :
-
 Caractéristique | Description
 -----            | ----                   
 *`Transport Rapide`* | *Achemine efficacement les données à haute vitesse.* 
