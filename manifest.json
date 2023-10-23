@@ -57,6 +57,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "design/network-design-pièges.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/network-design-pièges.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "design/network-design-principles.md",
       "output": {
         ".html": {
