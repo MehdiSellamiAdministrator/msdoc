@@ -32,3 +32,20 @@ Couche | Fonction
 ## Les fonctions des couches hiérarchiques.
 
 Le modèle hiérarchique consiste en trois couches principales : le Noyau (Core), la distribution et l'accès. Chacune de ces couches a des fonctions et des rôles spécifiques dans le réseau d'entreprise.
+
+### Caractéristiques de la Couche "Backbone"
+
+La couche Core est un élément critique d'un réseau et sert de backbone à haute vitesse pour les communications d'entreprise. Ses principales caractéristiques et considérations comprennent :
+
+Caractéristique | Description
+-----            | ----                   
+*`Transport Rapide`* | *Offre un transport de données à haute vitesse pour router efficacement les données entre différentes parties du réseau.* 
+*`Haute Fiabilité`* | *Elle doit être hautement fiable pour garantir des performances réseau constantes.*
+*`Redondance`* | *Fournit des chemins de secours pour éviter les interruptions de service en cas de défaillance.*
+*`Tolérance aux Pannes`* | *Conçue pour résister aux pannes du réseau sans perturbations majeures des services.* 
+*`Faible Latence et Facilité de Gestion`* | *Offre une faible latence pour une transmission rapide des données et est facilement gérable.*
+*`Éviter Manipulations Intensives par le CPU`* | *Se concentre sur les fonctions de routage et de commutation, évitant les tâches intensives pour le CPU.*
+*`Diamètre Limité et Cohérent`* | *Maintient un nombre cohérent de sauts de routeurs pour une performance équilibrée.*
+*`QoS (Qualité de Service)`* | *Met en place des fonctionnalités de qualité de service pour prioriser le trafic critique.*
+
+Ces caractéristiques sont essentielles pour garantir le bon fonctionnement de cette couche.
