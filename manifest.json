@@ -17,6 +17,66 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "design/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "design/ms-approches.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/ms-approches.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "design/network-design-elements.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/network-design-elements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "design/network-design-fundamentals.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/network-design-fundamentals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "design/network-design-principles.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/network-design-principles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "design/network-design-techniques.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/network-design-techniques.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/demarrage-initial.md",
       "output": {
         ".html": {
@@ -340,6 +400,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/broadcaststorm.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/broadcaststorm.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/buildkernel.jpg",
       "output": {
         "resource": {
@@ -354,6 +424,16 @@
       "output": {
         "resource": {
           "relative_path": "images/bzimages.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/campusarchitecture.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/campusarchitecture.jpg"
         }
       },
       "version": ""
@@ -974,6 +1054,16 @@
       "output": {
         "resource": {
           "relative_path": "images/netstat.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/networkboundaries.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/networkboundaries.jpg"
         }
       },
       "version": ""

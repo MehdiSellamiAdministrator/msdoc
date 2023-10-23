@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Fondamentaux de la conception | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Fondamentaux de la conception | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/design/network-design-fundamentals.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="fondamentaux-de-la-conception">Fondamentaux de la conception</h1>
+
+<p>La compréhension des fondamentaux de la conception de réseau est essentielle pour élaborer des réseaux performants et adaptés aux besoins de l'entreprise. Voici les éléments clés de ces fondamentaux :</p>
+<pre><code class="lang-mermaid">flowchart LR
+
+A{Mindset} --&gt; B{Requirements}
+B --&gt; C{Use cases}
+C --&gt; D{The business}
+D --&gt; E{Constraints}
+E --&gt; F{“Why”}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Éléments</th>
+<th>Détails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Mentalité (Mindset)</em></td>
+<td><em>Les besoins fonctionnels (comment les technologies ou les systèmes répondront aux besoins de l'entreprise); Les besoins techniques se concentrent sur la manière dont le système fonctionne et s'intègre (Sécurité, Disponibilité et Intégration); Les besoins liés aux applications (Quality of Experience (QoE); Utilisateur final: Clients, Utilisateurs internes, Partenaires commerciaux)</em></td>
+</tr>
+<tr>
+<td><em>Exigences (Requirements)</em></td>
+<td><em>La portée de la conception (Design Scope) est cruciale dans tout projet de conception de réseau, nécessitant une analyse minutieuse pour recueillir des informations et planifier efficacement la conception.</em></td>
+</tr>
+<tr>
+<td><em>Cas d'utilisation de la Conception</em></td>
+<td><em>Nouvelle Implémentation (Greenfield); Implémentation sur Réseau Existant (Brownfield); Ajout de Technologie ou d'Application; Remplacement de Technologie; Fusion ou Désinvestissement (Merge or Divest); Extension du Réseau (Scaling a Network); Échec de conception (Design Failure)</em></td>
+</tr>
+<tr>
+<td><em>L'entreprise (The business)</em></td>
+<td><em>En tant que concepteurs de réseau, vous faisez ce que vous faisez pour le bien des entreprises, des sociétés et des organisations que vous soutenez.</em></td>
+</tr>
+<tr>
+<td><em>Contraintes (Constraints)</em></td>
+<td><em>Lois de la conception : Contraintes liées à l'entreprise, Contraintes liées aux applications, Contraintes technologiques; Coût (Cost); Délai (Time); Emplacement (Location); Infrastructure; Compétence du personnel former le personnel (risque de temps de résolution des problèmes et coûts de temps d'arrêt) ou embaucher des experts (coûteux, ce qui peut annuler les avantages de coût &quot;TCO&quot;);</em></td>
+</tr>
+<tr>
+<td><em>&quot;Pourquoi&quot; (“Why”) ?</em></td>
+<td><em>Quels problèmes résolvez-vous avec cette technologie?  Comment se déroulent actuellement les flux de travail de vos employés ou de vos clients ? Comment cette technologie modifiera ces flux de travail ? Comment votre entreprise (gouvernance, politiques, processus et culture) évoluera-t-elle grâce à cette technologie ?</em></td>
+</tr>
+</tbody>
+</table>
+<p>En intégrant ces fondamentaux dans notre processus de conception, nous serons mieux préparé à créer des réseaux qui répondent aux besoins de l'entreprise et qui sont solides du point de vue technique.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/design/network-design-fundamentals.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

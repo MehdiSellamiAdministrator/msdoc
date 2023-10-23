@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Techniques de conception | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Techniques de conception | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/design/network-design-techniques.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="techniques-de-conception">Techniques de conception</h1>
+
+<p>La conception d'un réseau peut être sujette à des erreurs et à des problèmes de mauvaise conception. Il est crucial d'éviter ces pièges pour maintenir un réseau fiable et performant. Cette section met en lumière certaines des techniques de conception de réseau les plus courantes, que tout concepteur de réseau doit maîtriser pour prévenir les erreurs de conception et corriger celles qui ont été introduites par d'autres.</p>
+<pre><code class="lang-mermaid">flowchart LR
+
+A{Failure Isolation} --&gt; B{Shared Failure State}
+B --&gt; C{Modularity Building Blocks}
+C --&gt; D{Hierarchy}
+D --&gt; E{Putting It All Together}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Éléments</th>
+<th>Détails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Isolation des défaillances (Failure Isolation)</em></td>
+<td><em>Cette technique consiste à concevoir des mécanismes pour prévenir la propagation des défaillances au sein du réseau, évitant ainsi des pannes généralisées; Créer des limites (boundaries) au sein du réseau</em></td>
+</tr>
+<tr>
+<td><em>État de défaillance partagé (Shared Failure State ou aka fate sharing)</em></td>
+<td><em>Identifiez et gérez les points potentiels de défaillance qui pourraient être partagés par plusieurs composants du réseau; Il est essentiel de concevoir des mécanismes de redondance ou de mitigation pour éviter ou minimiser les effets de l'état de défaillance partagé</em></td>
+</tr>
+<tr>
+<td><em>Blocs de construction modulaires (Modularity Building Blocks)</em></td>
+<td><em>La &quot;modularité&quot; est un concept qui permet d'utiliser des blocs de construction spécialement conçus pour des objectifs particuliers; Utilisez des modules indépendants pour construire le réseau, facilitant ainsi la maintenance et l'évolutivité.</em></td>
+</tr>
+<tr>
+<td><em>Hiérarchie de conception (Hierarchy of Design)</em></td>
+<td><em>Organisez le réseau en couches pour une gestion plus efficace, permettant une meilleure structuration des éléments du réseau; Les couches les plus couramment utilisées dans l'architecture hiérarchique d'un réseau sont les suivantes : Couche Core (Noyau), Couche Distribution (Distribution), Couche Aggregation (Agrégation), Couche Access (Accès)</em></td>
+</tr>
+<tr>
+<td><em>Assemblage (Putting It All Together)</em></td>
+<td><em>Intégrez tous les éléments de conception pour créer un réseau opérationnel et fonctionnel.</em></td>
+</tr>
+</tbody>
+</table>
+<p>La compréhension et la maîtrise de ces techniques de conception permettent de créer des environnements réseau solides, capables de répondre aux besoins de l'entreprise et de minimiser les erreurs potentielles de conception.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/design/network-design-techniques.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

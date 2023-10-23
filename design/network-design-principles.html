@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Principes de conception | msDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Principes de conception | msDocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/design/network-design-principles.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mslogo.svg" alt="msdocs">
+            msdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="principes-de-conception">Principes de conception</h2>
+
+<p>Lors de la conception d'un réseau, plusieurs principes doivent être pris en compte pour garantir son efficacité et sa fonctionnalité. Voici cinq principes de conception de réseau essentiels :</p>
+<pre><code class="lang-mermaid">flowchart LR
+
+A{Sécurité} --&gt; B{Scalability}
+B --&gt; C{Disponibilité}
+C --&gt; D{Coûts}
+D --&gt; E{Management}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Éléments</th>
+<th>Détails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Sécurité omniprésente (Pervasive Security)</em></td>
+<td><em>Sécurité du périmètre (alias coquille de tortue): l'ancienne méthode de sécurisation (Parefeu); Sécurité basée sur les sessions et les transactions: authentification à 100 %, suivi d'une autorisation à 100 % de chaque session et transaction; Architecture Zero Trust : Temps réel basée sur l'intelligence artificielle/apprentissage automatique (IA/ML); Exigences de conformité (HIPAA; NIST, PCI DSS). Si une entreprise n'est pas conforme, elle sera déconnectée ou complètement arrêtée, c'est-à-dire fermée et mise hors service</em></td>
+</tr>
+<tr>
+<td><em>Extensibilité (Scalability)</em></td>
+<td><em>Il ne s'agit pas seulement d'adapter le réseau à la croissance, mais aussi de rendre l'entreprise plus flexible.  En permettant à l'entreprise de s'adapter rapidement à ses besoins changeants, le réseau devient un moteur de croissance plutôt qu'un simple centre de coûts.</em></td>
+</tr>
+<tr>
+<td><em>Changement de la disponibilité</em></td>
+<td><em>La disponibilité englobe tous les sujets : redondance, Résilience (alias robustesse), fiabilité, et bien plus encore. C'est ici que les exigences non déclarées commencent à entrer en jeu; La disponibilité des applications et des services</em></td>
+</tr>
+<tr>
+<td><em>La gestion des coûts</em></td>
+<td><em>Le coût n'est pas toujours financier ; il peut également s'agir d'un coût en ressources. Le personnel, le temps et les coûts techniques tels que la mémoire, le processeur, le stockage, la bande passante, l'énergie et la climatisation sont autant de coûts que vous devez gérer en tant que concepteur de réseau.</em></td>
+</tr>
+<tr>
+<td><em>Limitation de la complexité...Gestion (Manageability)</em></td>
+<td><em>Maintenir la simplicité dans la conception du réseau pour en faciliter la gestion; Dans certaines situations, une conception plus complexe peut être nécessaire, la gestion de la complexité est essentielle pour garantir que le réseau peut être correctement exploité et maintenu.</em></td>
+</tr>
+</tbody>
+</table>
+<p>Ces principes de conception sont essentiels pour garantir que le réseau fonctionne de manière optimale, qu'il s'adapte aux besoins de l'entreprise et qu'il reste sécurisé et gérable.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Concept d'exigences non déclarées (Unstated Requirements) : N'oubliez pas que les clients ne spécifient pas toujours clairement leurs besoins, ce qui laisse aux concepteurs de réseau le soin de déterminer ces exigences. Chaque principe de conception du réseau devient ainsi une exigence non déclarée à prendre en compte.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MehdiSellamiAdministrator/msdoc/blob/master/docs/design/network-design-principles.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Soutenu par le <a href="https://onetech-group.com">Onetech Group</a>. Réalisé par <a href="https://github.com/MehdiSellamiAdministrator">Mehdi Sellami</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
