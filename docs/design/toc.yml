@@ -21,3 +21,6 @@
   items:
     - name: Modèles Hiérarchiques
       href: ms-lan-entreprise.md
+    - name: Exemples de modèles hiérarchiques
+      href: ms-exemple-hierarchiques.md
+
