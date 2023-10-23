@@ -17,7 +17,7 @@
     - name: Résumé
       href: network-design-summary.md
 
-- name: Conception d'entreprise
+- name: Architectures d'entreprise
   items:
-    - name: Conception LAN
+    - name: Enterprise LAN
       href: ms-lan-entreprise.md
