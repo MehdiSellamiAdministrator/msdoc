@@ -83,3 +83,21 @@ Rôles et Fonctions | Explications
 > La couche de distribution joue également un rôle essentiel dans l'agrégation des routes en résumant les routes avant de les transmettre à la couche core. 
 
 La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche de cœur. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.
+
+##### `Caractéristiques de la Couche "Access "`
+
+Fonctionnalité | Description
+-----            | ----                   
+*`Commutation de couche 2`* | *Fournit une connectivité de couche 2 aux utilisateurs, permettant la communication au sein des segments locaux.* 
+*`Haute disponibilité`* | *Assure la disponibilité continue des services en cas de panne de dispositifs.*
+*`Sécurité des ports`* | *Protège les ports d'accès contre un accès non autorisé en limitant les adresses MAC autorisées.*
+*`Suppression de diffusion`* | *Réduit la diffusion excessive du trafic, ce qui améliore les performances du réseau.* 
+*`Classification et marquage QoS et frontières de confiance`* | *Étiquette le trafic pour une gestion de la qualité de service (QoS) et établit des frontières de confiance entre les appareils.*
+*`Limitation/régulation de débit`* | *Restreint ou régule la quantité de trafic autorisée sur un port.*
+*`Inspection du protocole de résolution d'adresse (ARP)`* | *Protège contre les attaques ARP en surveillant le trafic ARP.*
+*`Listes de contrôle d'accès virtuel (VACL)`* | *Permet de contrôler et de filtrer le trafic sur la couche d'accès.*
+*`Spanning tree`* | *Prévient les boucles dans le réseau en gérant les liaisons redondantes.* 
+*`Classification de confiance`* | *Identifie les ports d'accès de confiance qui ont des exigences de sécurité particulières.*
+*`Alimentation par Ethernet (PoE) et VLAN auxiliaires pour la VoIP`* | *Fournit de l'alimentation aux périphériques VoIP et utilise des VLAN auxiliaires pour leur connectivité.*
+*`Contrôle d'accès au réseau (NAC)`* | *Gère l'accès au réseau en vérifiant la conformité des dispositifs et en les autorisant en conséquence.*
+*`VLAN auxiliaires`* | *Utilisés pour des fonctions spécifiques, tels que la connectivité des dispositifs de gestion réseau.*
