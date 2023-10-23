@@ -28,3 +28,7 @@ Couche | Fonction
 *`Noyau (Core)`* | *Transport rapide (fast transport) entre les switches de distribution (To Enterprise Edge Modules).* 
 *`Distribution`* | *Connectivité basée sur des politiques.*
 *`Accès`* | *Accès des groupes de travail (workgroup) et des utilisateurs au réseau - Endpoint.*
+
+## Les fonctions des couches hiérarchiques.
+
+Le modèle hiérarchique consiste en trois couches principales : le Noyau (Core), la distribution et l'accès. Chacune de ces couches a des fonctions et des rôles spécifiques dans le réseau d'entreprise.
