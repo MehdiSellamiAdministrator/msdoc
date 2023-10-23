@@ -37,6 +37,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "design/ms-lan-entreprise.md",
+      "output": {
+        ".html": {
+          "relative_path": "design/ms-lan-entreprise.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "design/network-design-elements.md",
       "output": {
         ".html": {
