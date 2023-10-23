@@ -29,7 +29,7 @@ Couche | Fonction
 
 La couche Core est cruciale pour les communications d'entreprise :
 
-## `Caractéristiques de la Couche "Backbone"`
+## `Caractéristiques: "Backbone"`
 
 Caractéristique | Description
 -----            | ----                   
@@ -48,7 +48,7 @@ Caractéristique | Description
 > [!WARNING]
 > Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.
 
-## `Caractéristiques de la Couche "Distribution"`
+## `Caractéristiques: "Distribution"`
 
 La couche de distribution d'un réseau constitue un point d'isolation entre les couches d'accès et de core. Cette couche a divers rôles et fonctions, dont notamment :
 
@@ -84,7 +84,7 @@ Rôles et Fonctions | Explications
 
 La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche core. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.
 
-## `Caractéristiques de la Couche "Access"`
+## `Caractéristiques : "Access"`
 
 Fonctionnalité | Description
 -----            | ----                   
