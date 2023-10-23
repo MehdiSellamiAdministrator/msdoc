@@ -1,0 +1,23 @@
+- name: Get started
+- name: Conception Réseau
+  href: index.md
+  items:
+    - name: Deux-Approches
+      href: ms-approches.md
+    - name: Éléments Clés
+      href: network-design-elements.md
+    - name: Fondamentaux-ND
+      href: network-design-fundamentals.md
+    - name: Principes-ND
+      href: network-design-principles.md
+    - name: Techniques-ND
+      href: network-design-techniques.md
+    - name: Pièges-ND
+      href: network-design-pièges.md
+    - name: Résumé
+      href: network-design-summary.md
+
+- name: Conception d'entreprise
+  items:
+    - name: Conception LAN
+      href: ms-lan-entreprise.md
