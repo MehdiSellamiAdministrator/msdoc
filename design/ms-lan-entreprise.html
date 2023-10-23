@@ -197,6 +197,110 @@
 <h5>Warning</h5>
 <p>Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.</p>
 </div>
+<h5 id="caractéristiques-de-la-couche-distribution"><code>Caractéristiques de la Couche &quot;Distribution&quot;</code></h5>
+<p>La couche de distribution d'un réseau constitue un point d'isolation entre les couches d'accès et de core. Cette couche a divers rôles et fonctions, dont notamment :</p>
+<table>
+<thead>
+<tr>
+<th>Rôles et Fonctions</th>
+<th>Explications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>Connectivité basée sur des politiques</code></em></td>
+<td><em>Par exemple, l'acheminement du trafic d'un réseau particulier par une interface spécifique tandis que tout autre trafic passe par une autre interface.</em></td>
+</tr>
+<tr>
+<td><em><code>Redondance et load balancing</code></em></td>
+<td><em>Elle assure la redondance pour garantir la disponibilité du réseau en cas de défaillance. De plus, elle équilibre la charge entre les différents composants du réseau pour une meilleure utilisation des ressources.</em></td>
+</tr>
+<tr>
+<td><em><code>Agrégation des armoires de câblage des réseaux locaux (LAN)</code></em></td>
+<td><em>agrège les connexions de plusieurs armoires de câblage locales, ce qui simplifie la gestion du réseau en centralisant les connexions.</em></td>
+</tr>
+<tr>
+<td><em><code>Agrégation des connexions de réseaux étendus (WAN)</code></em></td>
+<td><em>Elle agrège les connexions provenant de différents réseaux étendus, ce qui peut réduire le nombre de connexions WAN nécessaires et améliorer l'efficacité de la communication entre les sites distants.</em></td>
+</tr>
+<tr>
+<td><em><code>Qualité de service (QoS)</code></em></td>
+<td><em>Elle gère la qualité de service en attribuant des priorités et en appliquant des politiques de qualité de service pour assurer que les types de trafic critiques bénéficient de performances optimales.</em></td>
+</tr>
+<tr>
+<td><em><code>Filtrage de sécurité</code></em></td>
+<td><em>La couche de distribution filtre le trafic pour des raisons de sécurité, en s'assurant que seuls les flux de données autorisés sont autorisés à traverser.</em></td>
+</tr>
+<tr>
+<td><em><code>Agrégation ou résumé (summarization) d'adresses ou de zones</code></em></td>
+<td><em>Elle agrège ou résume des plages d'adresses IP ou des zones pour réduire la complexité du routage et économiser de la bande passante.</em></td>
+</tr>
+<tr>
+<td><em><code>Accès aux départements ou groupes de travail</code></em></td>
+<td><em>Elle gère l'accès aux différents départements ou groupes de travail au sein de l'entreprise, contrôlant qui peut accéder à quelles ressources.</em></td>
+</tr>
+<tr>
+<td><em><code>Définition de domaines de diffusion ou de multidiffusion</code></em></td>
+<td><em>Elle définit les limites des domaines de diffusion ou de multidiffusion pour contrôler la portée des diffusions de données.</em></td>
+</tr>
+<tr>
+<td><em><code>Routage entre les réseaux locaux virtuels (VLAN)</code></em></td>
+<td><em>La couche de distribution permet le routage entre différents réseaux locaux virtuels (VLAN), ce qui isole le trafic entre les différents groupes d'utilisateurs.</em></td>
+</tr>
+<tr>
+<td><em><code>Traductions de média</code></em></td>
+<td><em>Elle peut effectuer des traductions de média pour permettre la communication entre différents types de médias, tels qu'Ethernet et Token Ring.</em></td>
+</tr>
+<tr>
+<td><em><code>Redistribution entre des domaines de routage</code></em></td>
+<td><em>Elle permet la redistribution du trafic entre différents domaines de routage, par exemple, entre deux protocoles de routage distincts.</em></td>
+</tr>
+<tr>
+<td><em><code>Distinguer les protocoles de routage statiques et dynamiques</code></em></td>
+<td><em>Elle peut servir de point de démarcation entre des protocoles de routage statiques (configurés manuellement) et dynamiques (configurés automatiquement).</em></td>
+</tr>
+</tbody>
+</table>
+<p>Nous pouvons utiliser plusieurs fonctionnalités du <code>logiciel Cisco IOS</code> pour mettre en oeuvre une stratégie au niveau de la couche de distribution :</p>
+<table>
+<thead>
+<tr>
+<th>Rôles et Fonctions</th>
+<th>Explications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>Filtrage par adresse source ou de destination</code></em></td>
+<td><em>Contrôle du trafic en fonction des adresses source ou de destination.</em></td>
+</tr>
+<tr>
+<td><em><code>Filtrage sur les ports d'entrée ou de sortie</code></em></td>
+<td><em>Filtrage du trafic en fonction des ports d'entrée ou de sortie des dispositifs.</em></td>
+</tr>
+<tr>
+<td><em><code>Masquage des numéros de réseau internes</code></em></td>
+<td><em>Dissimulation des numéros de réseau internes grâce au filtrage des routes.</em></td>
+</tr>
+<tr>
+<td><em><code>Filtrage par adresse source ou de destination</code></em></td>
+<td><em>Contrôle du trafic en fonction des adresses source ou de destination.</em></td>
+</tr>
+<tr>
+<td><em><code>Routage statique</code></em></td>
+<td><em>Configuration manuelle des entrées de routage pour des besoins spécifiques</em></td>
+</tr>
+<tr>
+<td><em><code>Mécanismes de qualité de service</code></em></td>
+<td><em>Priorisation et gestion du trafic pour un traitement préférentiel des données critiques.</em></td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>La couche de distribution joue également un rôle essentiel dans l'agrégation des routes en résumant les routes avant de les transmettre à la couche core.</p>
+</div>
+<p>La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche de cœur. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.</p>
 
 </article>
 
