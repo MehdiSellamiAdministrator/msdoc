@@ -17,20 +17,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "design/images/Switchedhierarchicaldesign.jpg",
+      "source_relative_path": "design/images/switchedhierarchical.jpg",
       "output": {
         "resource": {
-          "relative_path": "design/images/Switchedhierarchicaldesign.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "design/images/routedhierarchicaldesign.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "design/images/routedhierarchicaldesign.jpg"
+          "relative_path": "design/images/switchedhierarchical.jpg"
         }
       },
       "version": ""
@@ -56,9 +46,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "design/ms-exemple-hierarchiques.md",
       "output": {
