@@ -12,7 +12,7 @@ Caractéristique | Switched Hierarchical | Routed Hierarchical
 *`Inconvénient majeur`* | *Manque d'équilibrage de charge ("Spanning Tree" permet uniquement à l'un des liens redondants)* | *N/A.*
 *`Avantage clé`* | *N/A.* | *Équilibrage de charge dès la couche d'accès et facilité du routage.*
 
-![Alt text](images/switchedhierarchicaldesign.jpg)
+![switched hierarchical](images/switchedhierarchical.jpg)
 
 > [!NOTE] 
 > Le choix entre ces deux approches dépend des besoins spécifiques de l'organisation, de la taille du réseau, de la complexité des exigences de routage et de la redondance souhaitée.
