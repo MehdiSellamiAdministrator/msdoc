@@ -47,6 +47,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "design/images/reduces.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/reduces.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "design/images/switchedhierarchical.jpg",
       "output": {
         "resource": {

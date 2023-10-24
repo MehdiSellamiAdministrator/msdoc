@@ -132,7 +132,7 @@
 <tbody>
 <tr>
 <td><em><code>Core (backbone)</code></em></td>
-<td><em>Transport rapide entre les switches de distribution (Edge To Edge Modules) pour les grands environnements.</em></td>
+<td><em>Transport rapide entre les switches de distribution (Edge To Edge Modules) pour les grands environnements. Il relie la couche d'accès aux autres &quot;network blocks&quot;, comme le centre de données, le cloud privé, le cloud public, le WAN, Internet et les services réseau.</em></td>
 </tr>
 <tr>
 <td><em><code>Distribution</code></em></td>
@@ -197,6 +197,8 @@
 <h5>Warning</h5>
 <p>Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.</p>
 </div>
+<p>La couche centrale réduit la complexité du réseau, de N × (N − 1) à N liens pour N distributions:</p>
+<p><img src="images/reduces.jpg" alt="Alt text"></p>
 <h2 id="caractéristiques-distribution"><code>Caractéristiques: &quot;Distribution&quot;</code></h2>
 <p>La couche de distribution d'un réseau constitue un point d'isolation entre les couches d'accès et de core. Cette couche a divers rôles et fonctions, dont notamment :</p>
 <table>
