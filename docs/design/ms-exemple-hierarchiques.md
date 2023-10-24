@@ -4,7 +4,7 @@ Le modèle hiérarchique peut être implémenté de deux manières pour concevoi
 
 ## Comparaison entre les deux approches 
 
-Caractéristique | Conception en commutation | Conception en réseau routé
+Caractéristique | Switched Hierarchical | Routed Hierarchical
 -----           | ----                      | ----             
 *`Description générale`* | *Principalement commutation Ethernet pour réseaux de couche 2.* | *Commutation de couche 3 centrée sur la couche d'accès.*
 *`Recommandation`* | *Utilise des liens de couche 3 (Layer 3 links) pour la redondance.* | *Équilibre la charge (load balancing) dès la couche d'accès.*
