@@ -21,7 +21,7 @@ La conception LAN hiérarchique des réseaux divise le réseau en différentes c
 
 Couche | Fonction
 -----            | ----                   
-*`Core (backbone)`* | *Transport rapide entre les switches de distribution (Edge To Edge Modules) pour les grands environnements.* 
+*`Core (backbone)`* | *Transport rapide entre les switches de distribution (Edge To Edge Modules) pour les grands environnements. Il relie la couche d'accès aux autres "network blocks", comme le centre de données, le cloud privé, le cloud public, le WAN, Internet et les services réseau.* 
 *`Distribution`* | *Fournit un point d’agrégation pour la couche d’accès et agit comme une limite de services et de contrôle entre la couche d’accès et la couche principale.*
 *`Accès (edge layer)`* | *Donne aux "Endpoints" et aux utilisateurs un accès direct au réseau.*
 
@@ -47,6 +47,10 @@ Caractéristique | Description
 
 > [!WARNING]
 > Une grande entreprise adopte un réseau hiérarchique avec une couche core, distribution, et accès. Lors de la croissance, elle étend le modèle en ajoutant des sous-réseaux locaux intermédiaires à la couche de distribution, tout en maintenant le nombre de sauts constant vers la couche core. Cette expansion permet une connectivité stable et efficace sans perturber la couche core, simplifiant la gestion du réseau.
+
+La couche centrale réduit la complexité du réseau, de N × (N − 1) à N liens pour N distributions:
+
+![Alt text](images/reduces.jpg)
 
 ## `Caractéristiques: "Distribution"`
 
