@@ -85,24 +85,49 @@
         <article data-uid="">
 <h1 id="exemples-de-modèles-hiérarchiques">Exemples de Modèles Hiérarchiques</h1>
 
-<p>Le modèle hiérarchique peut être mis en oeuvre en utilisant deux approches différentes pour concevoir un réseau de campus : la conception traditionnelle en commutation (Switched Hierarchical Design) ou la conception en réseau routé.</p>
-<h2 id="conception-en-commutation-switched-hierarchical-design">Conception en commutation (Switched Hierarchical Design)</h2>
-<p>Dans ce cas, le réseau de campus est principalement basé sur la commutation Ethernet. Les segments du réseau local (LAN) sont connectés à l'aide de commutateurs Ethernet. Cette conception est généralement adaptée aux environnements où la commutation de couche 2 est suffisante pour répondre aux besoins de connectivité.</p>
-<p><img src="images/Switchedhierarchicaldesign.jpg" alt="Alt text"></p>
-<p>Layer 3 links entre le core et distribution (no switchport) sont recommandées pour permettre au protocole de routage de prendre en charge l'équilibrage de charge (load balancing) et la redondance rapide des routes en cas de panne de liaison (link).</p>
-<p>La couche de distribution constitue la limite entre les domaines de couche 2 et le réseau routé de couche 3. Les communications inter-VLAN sont acheminées dans la couche de distribution. La &quot;Route summarization&quot; est configurée sur les interfaces vers la couche principale.</p>
+<p>Le modèle hiérarchique peut être implémenté de deux manières pour concevoir un réseau de campus : la conception traditionnelle en commutation (Switched Hierarchical Design) ou la conception en réseau routé (Routed Hierarchical Design).</p>
+<h2 id="comparaison-entre-les-deux-approches">Comparaison entre les deux approches</h2>
+<table>
+<thead>
+<tr>
+<th>Caractéristique</th>
+<th>Conception en commutation</th>
+<th>Conception en réseau routé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>Description générale</code></em></td>
+<td><em>Principalement commutation Ethernet pour réseaux de couche 2.</em></td>
+<td><em>Commutation de couche 3 centrée sur la couche d'accès.</em></td>
+</tr>
+<tr>
+<td><em><code>Recommandation</code></em></td>
+<td><em>Utilise des liens de couche 3 (Layer 3 links) pour la redondance.</em></td>
+<td><em>Équilibre la charge (load balancing) dès la couche d'accès.</em></td>
+</tr>
+<tr>
+<td><em><code>Rôle de la couche de distribution</code></em></td>
+<td><em>Sépare les couches 2 et 3. Achemine les communications inter-VLAN. L’agrégation (ou summarization) de routes</em></td>
+<td><em>Pas de rôle spécifique de couche de distribution.</em></td>
+</tr>
+<tr>
+<td><em><code>Inconvénient majeur</code></em></td>
+<td><em>Manque d'équilibrage de charge (&quot;Spanning Tree&quot; permet uniquement à l'un des liens redondants)</em></td>
+<td><em>N/A.</em></td>
+</tr>
+<tr>
+<td><em><code>Avantage clé</code></em></td>
+<td><em>N/A.</em></td>
+<td><em>Équilibrage de charge dès la couche d'accès et facilité du routage.</em></td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/switchedhierarchicaldesign.jpg" alt="Alt text"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>L'inconvénient de cette conception est que le protocole &quot;Spanning Tree&quot; permet à un seul des liens redondants entre le commutateur d'accès et le commutateur de distribution d'être actif. En cas de panne, le deuxième lien devient actif, mais à aucun moment l'équilibrage de charge n'a lieu.</p>
+<p>Le choix entre ces deux approches dépend des besoins spécifiques de l'organisation, de la taille du réseau, de la complexité des exigences de routage et de la redondance souhaitée.</p>
 </div>
-<h2 id="la-conception-en-réseau-routé-routed-hierarchical-design">La conception en réseau routé (Routed Hierarchical Design)</h2>
-<p>Dans cette conception, la limite de la couche 3 est repoussée vers la couche d'accès. La commutation de couche 3 se produit dans les couches d'accès, de distribution et principales. Le filtrage des routes est configuré sur les interfaces vers la couche d'accès. La synthèse des routes est configurée sur les interfaces vers la couche principale.</p>
-<p><img src="images/routedhierarchicaldesign.jpg" alt="Alt text"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>L'avantage de cette conception est que l'équilibrage de charge s'effectue à partir de la couche d'accès car les liaisons vers les commutateurs de distribution sont routées.</p>
-</div>
-<p>Le choix entre ces deux approches dépend des besoins spécifiques de l'organisation, de la taille du réseau, de la complexité des exigences de routage et de la redondance souhaitée. La conception en commutation traditionnelle est souvent plus simple à mettre en oeuvre, tandis que la conception en réseau routé offre une plus grande flexibilité pour la gestion des politiques de routage et des VLAN.</p>
 
 </article>
 
