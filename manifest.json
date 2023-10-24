@@ -26,6 +26,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "design/images/vss.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/vss.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "design/index.md",
       "output": {

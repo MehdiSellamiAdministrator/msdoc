@@ -85,7 +85,7 @@
         <article data-uid="">
 <h1 id="exemples-de-modèles-hiérarchiques">Exemples de Modèles Hiérarchiques</h1>
 
-<p>Le modèle hiérarchique peut être implémenté de deux manières pour concevoir un réseau de campus : la conception traditionnelle en commutation (Switched Hierarchical Design) ou la conception en réseau routé (Routed Hierarchical Design).</p>
+<p>Le modèle hiérarchique (ou land design) peut être implémenté de deux manières pour concevoir un réseau de campus : la conception traditionnelle en commutation (Switched Hierarchical Design) ou la conception en réseau routé (Routed Hierarchical Design).</p>
 <h2 id="comparaison-entre-les-deux-approches">Comparaison entre les deux approches</h2>
 <table>
 <thead>
@@ -124,10 +124,39 @@
 </tbody>
 </table>
 <p><img src="images/switchedhierarchical.jpg" alt="switched hierarchical"></p>
+<h2 id="virtual-switching-system-vss">Virtual Switching System (VSS)</h2>
+<p>Le Virtual Switching System (VSS) est une solution qui assure la redondance entre les commutateurs d'accès et de distribution. Il combine deux commutateurs de distribution physiques en un seul commutateur logique</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Une solution pour assurer la redondance entre la commutation d'accès et de distribution est Virtual Switching System (VSS). Avec VSS, deux commutateurs de distribution physiques sont combinés en un seul commutateur logique, supprimant ainsi le besoin d'utiliser le STP et d'autres protocoles de redondance tels que Hot Standby Router Protocol (HSRP), Virtual Router Redundancy Protocol (VRRP) et Gateway Load Balancing Protocol (GLBP).</p>
+<p>VSS éliminant le besoin d'utiliser des protocoles de redondance comme le Spanning Tree Protocol (STP), le Hot Standby Router Protocol (HSRP), le Virtual Router Redundancy Protocol (VRRP) et le Gateway Load Balancing Protocol (GLBP)..</p>
 </div>
+<table>
+<thead>
+<tr>
+<th>Avantages</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>Commutation de couche 3 vers la couche d'accès</code></em></td>
+<td><em>Améliore la continuité des communications en utilisant 'Layer 3 switchin&quot; vers la couche d'accès.</em></td>
+</tr>
+<tr>
+<td><em><code>Gestion simplifiée d'une configuration unique</code></em></td>
+<td><em>Simplifie la gestion grâce à une configuration unique du commutateur de distribution VSS.</em></td>
+</tr>
+<tr>
+<td><em><code>Meilleur retour sur investissement (ROI)</code></em></td>
+<td><em>Augmente la bande passante entre la couche d'accès et la couche de distribution, offrant un meilleur ROI.</em></td>
+</tr>
+<tr>
+<td><em><code>Multichassis EtherChannel (MEC)</code></em></td>
+<td><em>Crée des technologies sans boucle et élimine le besoin du protocole Spanning Tree.</em></td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/vss.jpg" alt="switched hierarchical"></p>
 
 </article>
 
