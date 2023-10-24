@@ -26,6 +26,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "design/images/routedhierarchicaldesign.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/routedhierarchicaldesign.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "design/index.md",
       "output": {
