@@ -1,9 +1,9 @@
-# Modèles hiérarchiques
+# Modèles LAN hiérarchiques
 
-La conception hiérarchique des réseaux divise le réseau en différentes couches avec des fonctions spécifiques pour simplifier la conception, la gestion, et la croissance. Au lieu de tout gérer sur une seule plateforme, cette approche répartit les tâches de manière organisée.
+La conception LAN hiérarchique des réseaux divise le réseau en différentes couches avec des fonctions spécifiques pour simplifier la conception, la gestion, et la croissance. Au lieu de tout gérer sur une seule plateforme, cette approche répartit les tâches de manière organisée.
 
 > [!NOTE] 
-> Ces modèles sont applicables à la fois aux réseaux LAN et aux réseaux WAN.
+> Ces modèles sont applicables à la fois au LAN et au WAN.
 
 ## Avantages du modèle hiérarchique
 
@@ -21,9 +21,9 @@ La conception hiérarchique des réseaux divise le réseau en différentes couch
 
 Couche | Fonction
 -----            | ----                   
-*`Noyau (Core)`* | *Transport rapide entre les switches de distribution (To Enterprise Edge Modules).* 
-*`Distribution`* | *Connectivité basée sur des politiques.*
-*`Accès (edge layer)`* | *Accès des groupes de travail (workgroup) et des utilisateurs au réseau (Endpoint).*
+*`Core (backbone)`* | *Transport rapide entre les switches de distribution (Edge To Edge Modules) pour les grands environnements.* 
+*`Distribution`* | *Fournit un point d’agrégation pour la couche d’accès et agit comme une limite de services et de contrôle entre la couche d’accès et la couche principale.*
+*`Accès (edge layer)`* | *Donne aux "Endpoints" et aux utilisateurs un accès direct au réseau.*
 
 ## Fonctions des couches hiérarchiques
 
@@ -84,6 +84,13 @@ Rôles et Fonctions | Explications
 
 La couche de distribution joue un rôle central dans la gestion, le routage, la sécurité et la performance du réseau en assurant une transition fluide du trafic entre la couche d'accès et la couche core. Elle offre également une flexibilité pour l'application de politiques et la gestion des ressources réseau.
 
+![switched hierarchical](images/distributionlayer.jpg)
+
+> [!NOTE] 
+> Dans un grand campus, plusieurs commutateurs de distribution sont couramment utilisés, ce qui réduit les coûteuses liaisons en fibre optique entre les bâtiments. Ces commutateurs améliorent l'efficacité et la connectivité du réseau.
+
+![switched hierarchical](images/dis.jpg)
+
 ## `Caractéristiques : "Access"`
 
 Fonctionnalité | Description
@@ -101,6 +108,8 @@ Fonctionnalité | Description
 *`Alimentation par Ethernet (PoE) et VLAN auxiliaires pour la VoIP`* | *Fournit de l'alimentation aux périphériques VoIP et utilise des VLAN auxiliaires pour leur connectivité.*
 *`Contrôle d'accès au réseau (NAC)`* | *Gère l'accès au réseau en vérifiant la conformité des dispositifs et en les autorisant en conséquence.*
 *`VLAN auxiliaires`* | *Utilisés pour des fonctions spécifiques, tels que la connectivité des dispositifs de gestion réseau.*
+
+![switched hierarchical](images/accesslayerconnectivity.jpg)
 
 ## Ressources supplémentaires
 

@@ -19,7 +19,7 @@
 
 - name: Architectures d'entreprise
   items:
-    - name: Modèles Hiérarchiques
+    - name: Conception LAN hiérarchique
       href: ms-lan-entreprise.md
     - name: Exemples de modèles hiérarchiques
       href: ms-exemple-hierarchiques.md
