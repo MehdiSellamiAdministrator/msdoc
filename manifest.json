@@ -17,6 +17,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "design/images/accesslayerconnectivity.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/accesslayerconnectivity.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "design/images/dis.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/dis.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "design/images/distributionlayer.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/distributionlayer.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "design/images/switchedhierarchical.jpg",
       "output": {
         "resource": {
