@@ -15,4 +15,4 @@ Caractéristique | Switched Hierarchical | Routed Hierarchical
 ![switched hierarchical](images/switchedhierarchical.jpg)
 
 > [!NOTE] 
-> Le choix entre ces deux approches dépend des besoins spécifiques de l'organisation, de la taille du réseau, de la complexité des exigences de routage et de la redondance souhaitée.
+> Une solution pour assurer la redondance entre la commutation d'accès et de distribution est Virtual Switching System (VSS). Avec VSS, deux commutateurs de distribution physiques sont combinés en un seul commutateur logique, supprimant ainsi le besoin d'utiliser le STP et d'autres protocoles de redondance tels que Hot Standby Router Protocol (HSRP), Virtual Router Redundancy Protocol (VRRP) et Gateway Load Balancing Protocol (GLBP). 
