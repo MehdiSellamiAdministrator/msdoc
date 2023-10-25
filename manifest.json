@@ -27,6 +27,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "design/images/designs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/designs.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "design/images/dis.jpg",
       "output": {
         "resource": {
@@ -41,6 +51,16 @@
       "output": {
         "resource": {
           "relative_path": "design/images/distributionlayer.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "design/images/fullmesh.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "design/images/fullmesh.jpg"
         }
       },
       "version": ""

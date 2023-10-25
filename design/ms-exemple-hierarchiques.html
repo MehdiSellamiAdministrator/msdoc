@@ -85,7 +85,7 @@
         <article data-uid="">
 <h1 id="exemples-de-modèles-hiérarchiques">Exemples de Modèles Hiérarchiques</h1>
 
-<p>Le modèle hiérarchique (ou land design) peut être implémenté de deux manières pour concevoir un réseau de campus : la conception traditionnelle en commutation (Switched Hierarchical Design) ou la conception en réseau routé (Routed Hierarchical Design).</p>
+<p>Le modèle hiérarchique (ou <code>land design</code>) peut être implémenté de deux manières pour concevoir un réseau de campus : <code>la conception traditionnelle en commutation</code> (Switched Hierarchical Design) ou <code>la conception en réseau routé</code> (Routed Hierarchical Design).</p>
 <h2 id="comparaison-entre-les-deux-approches">Comparaison entre les deux approches</h2>
 <table>
 <thead>
@@ -125,10 +125,10 @@
 </table>
 <p><img src="images/switchedhierarchical.jpg" alt="switched hierarchical"></p>
 <h2 id="virtual-switching-system-vss">Virtual Switching System (VSS)</h2>
-<p>Le Virtual Switching System (VSS) est une solution qui assure la redondance entre les commutateurs d'accès et de distribution. Il combine deux commutateurs de distribution physiques en un seul commutateur logique</p>
+<p>Le <code>Virtual Switching System</code> (VSS) est une solution qui assure la redondance entre les commutateurs d'accès et de distribution. Il <code>combine</code> deux commutateurs de distribution physiques en un seul commutateur <code>logique</code>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>VSS éliminant le besoin d'utiliser des protocoles de redondance comme le Spanning Tree Protocol (STP), le Hot Standby Router Protocol (HSRP), le Virtual Router Redundancy Protocol (VRRP) et le Gateway Load Balancing Protocol (GLBP)..</p>
+<p>VSS éliminant le besoin d'utiliser des <code>protocoles de redondance</code> comme le <code>Spanning Tree Protocol (STP)</code>, le Hot Standby Router Protocol (<code>HSRP</code>), le Virtual Router Redundancy Protocol (<code>VRRP</code>) et le Gateway Load Balancing Protocol (<code>GLBP</code>).</p>
 </div>
 <table>
 <thead>
@@ -158,13 +158,57 @@
 </table>
 <p><img src="images/vss.jpg" alt="switched hierarchical"></p>
 <h2 id="2-tier-collapsed-core">2-Tier (Collapsed Core)</h2>
-<p>Une alternative à la hiérarchie à trois couches est la conception &quot;collapsed core&quot;, qui est une hiérarchie à deux couches utilisée dans les réseaux plus petits ou les environnements où une conception à trois couches complète n'est peut-être pas nécessaire.</p>
+<p>Une alternative à la hiérarchie à trois couches est la conception &quot;<code>collapsed core</code>&quot;, qui est une hiérarchie à <code>deux couches</code> utilisée dans les réseaux plus petits ou les environnements où une conception à trois couches complète n'est peut-être pas nécessaire.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Cette conception est généralement utilisée dans des scénarios tels qu'un seul bâtiment avec plusieurs étages. les couches de core et distribution sont fusionnées en une seule couche.</p>
+<p>Cette conception est généralement utilisée dans des scénarios tels qu'un <code>seul bâtiment avec plusieurs étages</code>. les couches de core et distribution sont fusionnées en une <code>seule</code> couche.</p>
 </div>
 <p><img src="images/modulardesignscalability.jpg" alt="switched hierarchical"></p>
-<h2 id="conception-en-étoile-hub-and-spoke">Conception en étoile (Hub-and-Spoke)</h2>
+<h2 id="hub-and-spoke">Hub-and-Spoke</h2>
+<p>La conception du réseau en étoile (<code>Hub-and-Spoke</code>) offre des temps de <code>convergence</code> plus rapides que la topologie en <code>anneau</code> (ring topology). De plus, la conception en étoile est plus évolutive et plus facile à gérer que les topologies en anneau ou <code>maillées</code> (mesh).</p>
+<p>Par exemple, la mise en oeuvre de politiques de sécurité dans une <code>topologie maillée complète</code> (full-mesh topology) deviendrait difficile à gérer, car nous devrions configurer des politiques à chaque emplacement. En utilisant la formule <code>n(n - 1)/2</code>, un mesh de 8 appareils générerait <code>8 (8 - 1)/2 = 56/2 = 28 liens</code>, ce qui peut devenir difficile à gérer en termes de complexité et de maintenance.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>La conception du réseau en étoile est souvent préférée dans de nombreuses situations en raison de sa <code>facilité de gestion</code>, de sa rapidité de <code>convergence</code> et de son <code>évolutivité</code> par rapport à d'autres topologies comme l'anneau ou le maillage.</p>
+</div>
+<p><img src="images/designs.jpg" alt="switched hierarchical"></p>
+<h2 id="full-mesh">Full-Mesh</h2>
+<p>Dans une topologie de maillage complet (<code>Full-Mesh</code>), chaque appareil serait connecté à chaque autre appareil, créant un réseau hautement interconnecté. Cela offre une grande redondance et des itinéraires de communication multiples, mais cela peut devenir <code>complexe</code> et <code>coûteux</code> à mesure que le réseau s'agrandit.</p>
+<table>
+<thead>
+<tr>
+<th>Appareil</th>
+<th>Liaisons Directes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>B, C, D</td>
+</tr>
+<tr>
+<td>B</td>
+<td>A, C, D</td>
+</tr>
+<tr>
+<td>C</td>
+<td>A, B, D</td>
+</tr>
+<tr>
+<td>D</td>
+<td>A, B, C</td>
+</tr>
+</tbody>
+</table>
+<p>Les avantages d'une topologie de maillage complet comprennent une redondance maximale. Cependant, il y a des <code>inconvénients</code> à cette approche. Le principal inconvénient est la complexité et le coût associés au <code>câblage</code> et à la <code>gestion de nombreuses liaisons directes</code>, en particulier dans les réseaux de grande taille. De plus, la configuration et la maintenance d'une topologie de maillage complet peuvent devenir fastidieuses à mesure que le nombre d'appareils augmente.</p>
+<p><img src="images/fullmesh.jpg" alt="switched hierarchical"></p>
+<h2 id="partial-mesh">Partial Mesh</h2>
+<p>En contraste, une topologie de maillage partiel (<code>Partial Mesh</code>) est une configuration où certains appareils ne sont pas directement connectés à tous les autres. Autrement dit, un maillage qui n’est pas un maillage complet.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Les réseaux réels utilisent ces idées de topologie, mais il est courant qu'ils les combinent : <code>Conception hybride</code>, intégrant des concepts topologiques dans une architecture plus étendue, généralement plus complexe.</p>
+</div>
+<h2 id="conception-poe-et-lan">Conception PoE et LAN</h2>
 
 </article>
 
