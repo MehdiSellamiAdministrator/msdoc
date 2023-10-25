@@ -29,3 +29,16 @@ Avantages | Description
 *`Multichassis EtherChannel (MEC)`* | *Crée des technologies sans boucle et élimine le besoin du protocole Spanning Tree.*
 
 ![switched hierarchical](images/vss.jpg)
+
+## 2-Tier (Collapsed Core)
+
+Une alternative à la hiérarchie à trois couches est la conception "collapsed core", qui est une hiérarchie à deux couches utilisée dans les réseaux plus petits ou les environnements où une conception à trois couches complète n'est peut-être pas nécessaire.
+
+> [!NOTE] 
+> Cette conception est généralement utilisée dans des scénarios tels qu'un seul bâtiment avec plusieurs étages. les couches de core et distribution sont fusionnées en une seule couche.
+
+![switched hierarchical](images/modulardesignscalability.jpg)
+
+## Conception en étoile (Hub-and-Spoke)
+
+
